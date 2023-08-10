@@ -1,2 +1,2 @@
 # Tourly
-Responsive Travel Website Ver 2 (HTML CSS JS)
+Responsive Travel Website Final (HTML CSS JS)

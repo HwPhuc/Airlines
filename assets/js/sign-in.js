@@ -6,9 +6,9 @@ const form = document.querySelector("form"),
 
 nextBtn.addEventListener("click", ()=> {
     allInput.forEach(input => {
-        if(input.value != ""){
+        if(input.value != "") {
             form.classList.add('secActive');
-        }else{
+        } else {
             form.classList.remove('secActive');
         }
     })

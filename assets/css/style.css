@@ -131,6 +131,8 @@ body { background: var(--white); }
   transition: var(--transition);
 }
 
+.btn a { color: var(--white); }
+
 .btn-primary {
   background: var(--bright-navy-blue);
   border-color: var(--bright-navy-blue);
@@ -363,7 +365,7 @@ body { background: var(--white); }
 \*-----------------------------------*/
 
 .hero {
-  background-image: url("../images/hero-banner.jpg");
+  background-image: url("../images/hero-banner.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -752,54 +754,6 @@ address {
 
 .footer-form .btn { width: 100%; }
 
-.footer-bottom {
-  --gunmetal: hsl(205, 36%, 17%);
-  background: var(--gunmetal);
-  padding-block: 20px;
-  text-align: center;
-}
-
-.copyright {
-  color: var(--gainsboro);
-  font-size: var(--fs-5);
-  margin-bottom: 10px;
-}
-
-.copyright a {
-  color: inherit;
-  display: inline-block;
-}
-
-.copyright a:is(:hover, :focus) { color: var(--white); }
-
-.footer-bottom-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 21px;
-}
-
-.footer-bottom-list > li { position: relative; }
-
-.footer-bottom-list > li:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  right: -10px;
-  bottom: 3px;
-  width: 1px;
-  background: hsla(0, 0%, 100%, 0.2);
-}
-
-.footer-bottom-link {
-  color: var(--gainsboro);
-  font-size: var(--fs-7);
-  transition: var(--transition);
-}
-
-.footer-bottom-link:is(:hover, :focus) { color: var(--white); }
-
-
 
 
 
@@ -833,6 +787,7 @@ address {
 }
 
 .go-top:is(:hover, :focus) { opacity: 1; }
+
 
 
 

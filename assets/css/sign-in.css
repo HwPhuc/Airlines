@@ -11,7 +11,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("/assets/images/sky-bg.jpg");
+    background-image: url("../images/sky-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -332,6 +332,8 @@ body { background: var(--white); }
 
 .navbar-top .logo img { width: 150px; }
 
+.navbar-top .logo .logo-text { color: var(--bright-navy-blue);}
+
 .nav-close-btn {
   font-size: 20px;
   color: var(--bright-navy-blue);

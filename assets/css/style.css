@@ -245,6 +245,19 @@ body { background: var(--white); }
 
 .header-top .logo img { max-width: 100px; }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--white);
+  margin-left: 10px;
+  text-align: center;
+}
+
 .header-btn-group {
   justify-self: flex-end;
   display: flex;

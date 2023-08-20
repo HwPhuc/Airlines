@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourly</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/mobile.css" media="screen and (max-width: 500px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/main.js"></script>
+</head>
+<body>
+    <div class="title-text" style="background-image: url(img/PhuQuoc-1.jpg);">
+        <h1>Phú Quốc</h1>
+    </div>
+    <div class="heading-title">
+        <div class="text">
+            <div class="destination">
+                <p>
+                    Nằm ở phía Tây Nam Việt Nam, trong vùng vịnh Thái Lan, đảo Phú Quốc được mệnh danh là hòn ngọc quý của Việt Nam. Vẻ đẹp thơ mộng, yên bình hiện hữu trong làn nước biển trong veo màu ngọc bích, những bãi cát trải dài trắng xóa in bóng rặng dừa xanh cùng các rạn san hô rực rỡ sắc màu và khu rừng nguyên sinh xanh thẳm. Giữa khung cảnh thiên nhiên, hình ảnh con người hiện lên bình dị, chân chất ở nơi làng chài, bên những vườn hồ tiêu xanh bạt ngàn.
+                </p>
+            </div>    
+        </div> 
+        <div class="info-place">
+            <h3>Thông tin điểm đến</h3>
+            <div class="fact">
+                <i class="fa-regular fa-clock"></i>
+                <span id="time"></span>
+            </div>
+            <div class="fact">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Ngôn ngữ: Tiếng Việt và Tiếng Anh</span>
+            </div>
+            <div class="fact">
+                <i class="fa-solid fa-money-bill-wave"></i>
+                <span>Tiền tệ: Việt Nam Đồng (VNĐ)</span>
+            </div>
+            <div class="fact">
+                <i class="fa-regular fa-calendar-check"></i>
+                <span>Thời điểm đi du lịch lý tưởng: Cuối tháng 10, đầu tháng 04 (giao mùa)</span>
+            </div>
+            <div class="fact">
+                <i class="fa-brands fa-cc-visa"></i>
+                <span>VISA: Miễn thị thực với thời hạn tạm trú không quá 15 ngày kể từ ngày nhập cảnh</span>
+            </div>
+        </div>
+    </div>   
+    <div class="title">
+        <p>Khám phá Phú Quốc</p>
+    </div>
+    <div class="discover">
+        <div class="tabs-nav">
+            <ul class="sub-tabs-nav">
+                <li id="tab-link-1">Cảnh đẹp</li>
+                <li id="tab-link-2">Ẩm thực</li>
+                <li id="tab-link-3">Hoạt động</li>
+                <li id="tab-link-4">Di chuyển</li>
+            </ul>
+        </div>
+        <div class="landscapes tab-content" id="tab-content-1">
+            <div class="item #1" id="item-1">
+                <div class="image">
+                    <img src="img/Landscapes/Bai-Truong-1.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Bãi Trường</p>
+                    <p>xã Dương Tơ, TP. Phú Quốc, tỉnh Kiên Giang</p>
+                </div>
+            </div>
+            <div class="item #1" id="item-2">
+                <div class="image">
+                    <img src="img/Landscapes/nha-tu-phu-quoc.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Nhà từ Phú Quốc</p>
+                    <p>350 Đ. Nguyễn Văn Cừ, An Thới, Phú Quốc</p>
+                </div>
+            </div>
+            <div class="item #1" id="item-3">
+                <div class="image">
+                    <img src="img/Landscapes/Ban-dao-An-Thoi.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Bán đảo An Thới</p>
+                </div>
+            </div>
+            <div class="item #1" id="item-4">
+                <div class="image">
+                    <img src="img/Landscapes/nha-thung-nuoc-mam-phu-quoc.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Nhà thùng nước mắm</p>
+                </div>
+            </div>
+            <div class="item #1" id="item-5">
+                <div class="image">
+                    <img src="img/Landscapes/Vuon-quoc-gia-PhuQuoc.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Vườn Quốc gia Phú Quốc</p>
+                </div>
+            </div>
+            <div class="item #1" id="item-6">
+                <div class="image">
+                    <img src="img/Landscapes/dinh-cau-phu-quoc.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Dinh Cậu</p>
+                    <p>khu phố 2, Dương Đông, Phú Quốc</p>
+                </div>
+            </div>
+        </div>
+        <div class="more-1">
+            <div class="hightbox-content hightbox-content-1">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/Bai-Truong-1.jpg" alt="">
+                    </div>
+                    <div class="content">                    
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Bãi Trường</h2>
+                                <p>xã Dương Tơ, TP. Phú Quốc, tỉnh Kiên Giang</p>
+                            </div> 
+                            <p>
+                                Bãi Trường Phú Quốc là lựa chọn hàng đầu cho chuyến nghỉ dưỡng của bạn. Du khách đến đây bị chinh phục hoàn toàn bởi bãi cát trắng mịn như kem, làn nước xanh ngọc bích cùng hệ sinh thái biển trù phú hiếm nơi nào có được.
+                                <br>Bãi Trường nằm ở vị trí đắc địa, thu hút du khách gần xa:
+                            </p>
+                            <ul>
+                                <li>Cách cảng hàng không quốc tế Phú Quốc chỉ 5 phút lái xe</li>
+                                <li>Cách trung tâm phường Dương Đông 15 phút lái xe</li>
+                                <li>Cách Bãi Sao, Hòn Thơm 15 phút lái xe</li>
+                            </ul>
+                            <p>
+                                Bãi Trường là bãi biển dài nhất Phú Quốc, với hơn 20km trải dài từ mũi Dinh Cậu ra đến Khóe Tàu Rũ. Bãi Trường mê đắm lòng người bởi bãi cát trắng mịn mênh mông, nhiều mỏm đá rải rác đủ hình thù và một vài làng chài nhỏ ẩn mình dọc bãi biển.
+                            </p>  
+                            <p>
+                                Nơi đây được chia làm 2 bãi nhỏ là Bắc Long Beach và Nam Long Beach. Bắc Long Beach dài 5km, từ cảng Dinh Cậu đến Eden Resort. Nam Long Beach chiếm 15km còn lại, kéo xuống tới Bắc An Thới. Với phong cảnh hữu tình, Bãi Trường không chỉ phát triển du lịch biển mạnh mẽ mà còn là mảnh đất “vàng” để nuôi cấy ngọc trai.
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-2">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/nha-tu-phu-quoc.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Nhà tù Phú Quốc - Địa ngục trần gian</h2>
+                                <p>350 Đ. Nguyễn Văn Cừ, An Thới, Phú Quốc</p>
+                            </div>
+                            <p>Nhà tù này còn có tên là nhà lao Cây Dừa.</p>
+                            <p>Đây là địa điểm tham quan dành cho những ai yêu thích lịch sử, trong chiến tranh Việt Nam, tù binh chiến tranh tại Trại giam tù binh Phú Quốc đã phải chịu những hình phạt, tra tấn như đóng đinh vào tay, chân, đầu;…Trong thời gian chưa đầy 6 năm tồn tại, trại giam cây dừa Phú Quốc đã có hơn 4.000 người chết, hàng chục người bị tàn phế. Đến đây, bạn có thể quan sát thấy nhà trưng bày hiện vật xây hai tầng và khu trưng bày ngoài trời những hiện vật nguyên gốc và hầu như giữ nguyên vị trí.</p>
+                            <p>Đây là trại giam tù binh trung tâm toàn Việt Nam Cộng hòa, <strong>từng giam giữ hơn 32.000 tù binh.</strong> Đến năm 1995, nơi đây được Bộ Văn hóa - Thông tin công nhận là di tích lịch sử cấp Quốc gia, cũng kể từ đó, nhà tù được mở cửa cho du khách đến tham quan.</p>
+                            <p>Có lẽ khi đặt chân đến đây, các du khách đều tò mò về những câu chuyện thời chiến, những tội ác dã man mà người ta thường nhắc về thời Pháp thuộc, Mỹ - Ngụy. Những câu chuyện được tái hiện chân thực sẽ là minh chứng rõ ràng nhất cho sự tàn khốc và ác liệt của chiến tranh.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-3">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/Ban-dao-An-Thoi.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Bán đảo Thới An</h2>
+                                <p>xã Hòn Thơm, TP. Phú Quốc, Kiên Giang</p>
+                            </div>
+                            <p>
+                                Quần đảo An Thới Phú Quốc là một tổ hợp gồm trên 18 hòn đảo lớn nhỏ tọa lạc tại phía Nam đảo ngọc, thuộc khu vực vịnh Thái Lan.
+                            </p>
+                            <p>Sở hữu vẻ đẹp hoang sơ do còn được bảo tồn nguyên vẹn, chưa chịu tác động nhiều của con người để phát triển du lịch như những khu vực khác. Biển ở An Thới trong xanh tựa như ngọc lục bảo, cát lại trắng mịn màng lung linh dưới ánh nắng. Hòa cùng cảnh sắc thiên nhiên tạo nên nét đẹp thơ mộng được ví như chốn thiên đường nơi hạ giới.</p>
+                            <p>Quần đảo An Thới mang trong mình hệ sinh thái vô cùng đa dạng trải dài từ trên rừng xuống đến biển, cùng với các khu dự trữ.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-4">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/nha-thung-nuoc-mam-phu-quoc.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Nhà thùng nước mắm</h2>
+                            </div>
+                            <p>
+                                Du lịch Phú Quốc, bạn không thể không đến tham quan 1 nhà thùng nước mắm, nơi người dân địa phương vẫn thường dùng để ủ những thùng chứa cá cơm loại hảo hạng để làm mắm. Nước mắm Phú Quốc từ lâu đã nổi tiếng cả trong và ngoài nước không chỉ nhờ độ đạm cao, có màu, mùi, vị thơm ngon đặc trưng mà còn bởi truyền thống làm nước mắm lâu đời của người dân nơi đây. Ngày nay, hầu như trong mâm cơm gia đình Việt không thể không có chén nước mắm tỏi ớt, chấm rau, nêm gia vị thịt…đều ngon.
+                            </p>
+                            <p>
+                                Ở Phú Quốc, có 3 nhà thùng nước mắm nổi tiếng như:
+                            </p>
+                            <ul>
+                                <li>Nước mắm Thịnh Phát;</li>
+                                <li>Nước mắm Khải Hoàn;</li>
+                                <li>Nước mắm Phụng Hưng</li>
+                                <li>Và nhiều nhà thùng truyền thống khác...</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-5">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/Vuon-quoc-gia-PhuQuoc.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Vườn quốc gia Phú Quốc</h2>
+                                <p</p>
+                            </div>
+                            <p>Vườn quốc gia Phú Quốc được “ra mắt” vào năm 2001, nằm ở phía Bắc đảo Phú Quốc và chiếm khoảng 70% diện tích đảo, hơn 31.000 héc-ta. Trong phạm vi diện tích của mình, vườn quốc gia Phú Quốc “sở hữu” ba dãy núi lớn trên đảo: dãy Hàm Ninh, dãy Hàm Rồng và dãy Gành Dầu cùng 60 km đường bờ biển tuyệt đẹp.</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-6">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/dinh-cau-phu-quoc.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Dinh Cậu</h2>
+                                <p>Khu phố 2, Dương Đông, Phú Quốc</p>
+                            </div>
+                            <p>Dinh Cậu còn được biết đến với tên gọi Ngôi miếu Long Vương là một ngôi đền nhỏ được xây dựng vào năm 1937 để thờ bà Mẫu. Sự kết hợp giữa đền thờ và ngọn hải đăng do các ngư dân địa phương xây dựng với hi vọng bà Mẫu sẽ giúp những chuyến đi biển được bình an. Đến Dinh, bạn không chỉ có thể cầu bình an cho gia đình, mà còn ngắm cảnh thiên nhiên hùng vĩ đầy ấn tượng.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+        <div class="foods tab-content" id="tab-content-2">
+            <div class="item #2" id="item-1">
+                <div class="image">
+                    <img src="img/Foods/Bun-ken.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Bún kèn</p>
+                </div>
+            </div>
+            <div class="item #2" id="item-2">
+                <div class="image">
+                    <img src="img/Foods/Ghe-Ham-Ninh.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Ghẹ Hàm Ninh</p>
+                </div>
+            </div>
+            <div class="item #2" id="item-3">
+                <div class="image">
+                    <img src="img/Foods/Goi-ca-trich.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Gỏi cá trích</p>
+                </div>
+            </div>
+            <div class="item #2" id="item-4">
+                <div class="image">
+                    <img src="img/Foods/Hai-san-tuoi-song.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Hải sản</p>
+                </div>
+            </div>
+        </div>
+        <div class="more-2">
+            <div class="hightbox-content hightbox-content-1">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Foods/Bun-ken.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Bún kèn</h2>
+                                <p>món ăn "độc nhất vô nhị" nhất định phải thử!</p>
+                            </div>
+                            <p>Bún kèn hay còn được gọi bún khèn. Từ <strong><i>"kèn"</i></strong>  theo tiếng Khmer ý chỉ những món ăn có sử dụng nước cốt dừa. Trên bản đồ ẩm thực Việt Nam, bún kèn ít được nhắc tới, chỉ những du khách thực sự sành ăn mới biết và được thưởng thức món ăn dân dã này.</p>
+                            <p>Khác với bún kèn có ở Hà Tiên hay Châu Đốc, nước dùng thường nấu từ cá lóc lạng thì ở Phú Quốc do có nguồn thủy hải sản phong phú nên người dân chế biến cá nhồng hoặc cá ngân (2 loại cá hiếm thấy ở nơi đâu ngoài đảo ngọc). Nhờ vậy, bún kèn đặc sản Phú Quốc mang một hương vị đặc trưng hơn so với ở một số địa phương khác, khiến thực khách không thể nào quên.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-2">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Foods/Ghe-Ham-Ninh.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Ghẹ Hàm Ninh</h2>
+                                <p>TƯƠI - NGON - RẺ</p>
+                            </div>
+                            <p>Ghẹ Hàm Ninh Phú Quốc là món quà thơm ngon từ biển cả mà hễ ai du lịch đến Phú Quốc đều muốn nếm thử. Ghẹ Hàm Ninh thịt chắc, ngọt thơm tự nhiên. Ghẹ có thể chế biến thành nhiều món ăn thơm ngon như cháo ghẹ, ghẹ hấp bia, lẩu ghẹ,.. Nhưng ngon nhất có lẽ là món ghẹ hấp chấm cùng muối tiêu chanh. Món ăn đơn giản nhưng giữ được hương vị thơm ngọt tự nhiên của thịt ghẹ.</p>
+                            <p>Ghẹ Hàm Ninh chỉ cần hấp lên và chấm muốt ới thôi đã làm xao lòng biết bao du khách. Khi chọn ghẹ bạn hãy nhớ ghẹ to quá sẽ ăn không ngon mà ghẹ bé quá sẽ không có thịt. Nên lựa loại khoảng 6 đến 7 con một ký, nếu thích gạch thì hãy lựa ghẹ cái và thích thịt nhiều thì lựa ghẹ đực bạn nhé.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-3">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Foods/Goi-ca-trich.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Gỏi cá trích</h2>
+                            </div>
+                            <p>Cá trích tươi cuốn bánh tráng với đủ loại rau với ít dừa nạo tạo nên món ăn không tanh mà thơm nức mùi rau rừng lẫn vị béo của dừa và vị giòn ngọt của miếng cá. Ăn cùng với bát nước chấm được làm từ ớt, tỏi, đậu phộng xay nhuyễn pha với nước mắm chính hiệu Phú Quốc và cốc rượu sim quả là không gì sánh bằng.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-4">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Foods/Hai-san-tuoi-song.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Hải sản</h2>
+                                <p>Tươi - sống</p>
+                            </div>
+                            <p>Hải sản Phú Quốc được xem là tinh hoa của nền ẩm thực Phú Quốc. Sở hữu lợi thế vùng biển đảo nên nguồn hải sản ở Phú Quốc luôn tươi ngon và dồi dào.</p>
+                            <p>Hải sâm, bào ngư nướng, ghẹ Hàm Ninh,… là những món hải sản Phú Quốc làm “xiêu lòng” du khách khi đến thăm đảo ngọc. Đây cũng là trải nghiệm du lịch hấp dẫn giúp cho bạn có thể thoải mái ăn ngon, ngắm cảnh tuyệt đẹp.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="actives tab-content" id="tab-content-3">
+            <div class="item #3" id="item-1">
+                <div class="image">
+                    <img src="img/Actives/Ngam-binh-minh.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Ngắm bình minh trên biển</p>
+                </div>
+            </div>
+            <div class="item #3" id="item-2">
+                <div class="image">
+                    <img src="img/Actives/Lan-ngam-san-ho.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Lăn ngắm san hô</p>
+                </div>
+            </div>
+            <div class="item #3" id="item-3">
+                <div class="image">
+                    <img src="img/Actives/Cheo-thuyen-Kayak.png" alt="">
+                </div>
+                <div class="info">
+                    <p>Chèo thuyền Kayak</p>
+                </div>
+            </div>
+            <div class="item #3" id="item-4">
+                <div class="image">
+                    <img src="img/Actives/Moto-nuoc-Phu-Quoc.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Đua mô-tô nước trên biển</p>
+                </div>
+            </div>
+            <div class="item #3" id="item-5">
+                <div class="image">
+                    <img src="img/Actives/Tham-quan-Vinpearl-Safari.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Tham quan, cắm trại tại vinpearl Safari Phú Quốc</p>
+                </div>
+            </div>
+        </div>
+        <div class="more-3">
+            <div class="hightbox-content hightbox-content-1">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Actives/Ngam-binh-minh.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Ngắm bình minh trên biển</h2>
+                                <p>món ăn "độc nhất vô nhị" nhất định phải thử!</p>
+                            </div>
+                            <p>Bún kèn hay còn được gọi bún khèn. Từ <strong><i>"kèn"</i></strong>  theo tiếng Khmer ý chỉ những món ăn có sử dụng nước cốt dừa. Trên bản đồ ẩm thực Việt Nam, bún kèn ít được nhắc tới, chỉ những du khách thực sự sành ăn mới biết và được thưởng thức món ăn dân dã này.</p>
+                            <p>Khác với bún kèn có ở Hà Tiên hay Châu Đốc, nước dùng thường nấu từ cá lóc lạng thì ở Phú Quốc do có nguồn thủy hải sản phong phú nên người dân chế biến cá nhồng hoặc cá ngân (2 loại cá hiếm thấy ở nơi đâu ngoài đảo ngọc). Nhờ vậy, bún kèn đặc sản Phú Quốc mang một hương vị đặc trưng hơn so với ở một số địa phương khác, khiến thực khách không thể nào quên.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-2">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Actives/Lan-ngam-san-ho.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Lặn biển ngắm san hô</h2>
+                                <p></p>
+                            </div>
+                            <p>Phú Quốc được thiên nhiên ưu ái ban tặng cho thảm san hô đẹp nhất Việt Nam với diện tích lên đến 480ha, trong đó có hơn 360 loài san hô cứng và hàng chục loài san hô mềm cùng sinh sống. </p>
+                            <p>Tạo hóa đã khoản đãi cho Phú Quốc một thế giới thủy sinh phong phú và kỳ diệu, tạo nên “bức tranh thủy mặc” sinh động dưới lòng đại dương. Nắm bắt vẻ đẹp trời ban ấy, dịch vụ lặn biển Phú Quốc ra đời nhằm phục vụ du khách tham quan khám phá hệ sinh thái đa dạng, trù phú dưới đáy biển. Dịch vụ cung cấp cho du khách dưới dạng tour lặn biển Phú Quốc nửa ngày hoặc nguyên ngày. </p>            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-3">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Actives/Cheo-thuyen-Kayak.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Chèo thuyền Kayak</h2>
+                                <p></p>
+                            </div>
+                            <p>Chèo thuyền kayak ở Phú Quốc không chỉ giúp bạn trải nghiệm cảm giác tự tay chèo thuyền mà còn được ngắm nhìn các hoạt động của ngư dân làng chài hai bên bờ và chiêm ngưỡng những cánh rừng nguyên sinh tuyệt đẹp. Trải nghiệm chèo thuyền kayak đang trở thành hoạt động du lịch thú vị được nhiều người quan tâm.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-4">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Actives/Moto-nuoc-Phu-Quoc.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Đua mô tô nước trên biển</h2>
+                            </div>
+                            <p>Mô tô nước ở Sun World được thiết kế giống như một chiếc xe máy tay ga. Nếu chưa có nhiều kinh nghiệm tham gia trò chơi này bạn cũng đừng lo lắng vì hướng dẫn viên sẽ hướng dẫn bạn tường tận từ a đến z. Chỉ cần vặn nhẹ tay ga và lướt trên những đợt sóng tung bọt trắng xoá, đua mô tô nước ở Phú Quốc chưa bao giờ khiến người lữ hành thất vọng.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-5">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Actives/Tham-quan-Vinpearl-Safari.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Tham quan Vinpearl Safari</h2>
+                            </div>
+                            <p>Công viên Vinpearl Safari Phú Quốc được coi là ngôi nhà chung của hàng nghìn cá thể. Trong đó, có rất nhiều các loài động vật quý hiếm trên khắp thế giới như: linh dương sừng kiếm Ả Rập, hạc, thiên nga trắng cổ đen… Động vật ở đây cùng chung sống hạnh phúc, được nuôi dưỡng trong điều kiện tốt nhất theo tiêu chuẩn quốc tế.</p>
+                            <p>Vinpearl Safari Phú Quốc là vườn thú đầu tiên tại Việt Nam nhận được chứng chỉ của Hiệp hội SEAZA trong công tác bảo tồn và cải thiện phúc trạng động vật. Vườn thú được cộng đồng quốc tế ghi nhận hội tụ đầy đủ các điều kiện tự nhiên, cơ sở vật chất, điều kiện môi trường sống… để các loài thú hoang dã có thể bảo tồn và sinh sản nhằm nhân giống, tạo đàn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="transit tab-content" id="tab-content-4">
+            <div class="item #4" id="item-1">
+                <div class="image">
+                    <img src="img/Transit/taxi.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Taxi</p>
+                </div>
+            </div>
+            <div class="item #4" id="item-2">
+                <div class="image">
+                    <img src="img/Transit/xe-bus.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Xe buýt</p>
+                </div>
+            </div>
+            <div class="item #4" id="item-3">
+                <div class="image">
+                    <img src="img/Transit/xe-dap.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Xe đạp</p>
+                </div>
+            </div>
+            <div class="item #4" id="item-4">
+                <div class="image">
+                    <img src="img/Transit/xe-may.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Xe máy</p>
+                </div>
+            </div>
+            <div class="item #4" id="item-5">
+                <div class="image">
+                    <img src="img/Transit/oto.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Ô tô</p>
+                </div>
+            </div>
+        </div>
+        <div class="more-4">
+            <div class="hightbox-content hightbox-content-1">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Transit/taxi.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Taxi</h2>
+                            </div>
+                            <p>Với những khoảng thời điểm thời tiết xấu bạn không thể đi bằng xe máy, cũng không biết cách di chuyển bằng ô tô càng không thể đi bộ đi lại đến các điểm tham quan thì taxi trên đảo sẽ là phương tiện di chuyển thích hợp dành cho bạn.</p>
+                            <p>Tuy nhiên , khoảng cách giữa các điểm thăm quan , các bãi tắm ở Phú Quốc khá xe nên các bạn nên cân nhắc chi phí khi gọi xe.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-2">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Transit/xe-bus.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Xe bus</h2>
+                            </div>
+                            <p>Phú Quốc có hệ thống xe bus từ lâu.</p>
+                            <p>Đặc biệt, đã có hệ thống xe bus VinBus. Các bạn có thể tra cứu thêm <a href="https://maps.vinbus.vn/pq">tại đây</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-3">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Transit/xe-dap.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Xe đạp</h2>
+                            </div>
+                            <p>Nếu bạn yêu thích di chuyển bằng xe đạp, muốn tận hưởng cuộc sống một cách nhẹ nhàng không ồn ào, những giờ phút sảng khoái thong dong cùng với người thân, gia đình hay bạn bè của mình khám phá một địa điểm nào đó tại hòn đảo ngọc Phú Quốc xinh đẹp này thì xe đạp là phương tiện di chuyển vô cùng hợp lý dành cho bạn.</p>
+                            <p>Mức giá trung bình cho xe đạp khoảng 100.000đ/ngày, xe đạp đôi là 150.000đ/ngày, xe địa hình cũng là 150,000đ/ngày. Nếu thuê theo giờ thì là 20,000đ/giờ.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-4">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Transit/xe-may.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Xe máy</h2>
+                            </div>
+                            <p>Xe máy ( xe honda ) là phương tiện phổ thông nhất , thuận tiện nhất , số lượng nhiều nhất  không chỉ ở Phú Quốc mà còn trên toàn Việt Nam.Một em honda sẽ có thể giúp bạn đi bất kỳ đâu , bất kỳ lúc nào với giá cực kỳ rẻ .</p>
+                            <p>Du khách có thể mang xe máy theo khi ra Phú Quốc (đi tàu hoặc phà  từ Hà Tiên , Rạch Giá) </p>
+                            <p>Hoặc thuê xe máy tại các khách sạn, tại các cửa hàng dịch vụ thuê xe gắn máy. Bạn có thể dễ dàng thuê được cho mình một chiếc xe máy với giá <strong>từ 120.000đ – 180.0000đ/ ngày/xe số</strong> và <strong> từ 150.000đ – 200.000đ/ngày/xe ga</strong>, không bao gồm xăng. Khi thuê xe bạn chỉ cần bản sao chứng minh thư kèm bản chính để đối chiếu, tiền đặt cọc. Bạn có thể đặt xe trước 3-5 ngày, xe sẽ được giao ở thị trấn Dương Đông.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-5">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Transit/oto.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Ô tô</h2>
+                            </div>
+                            <p>Nếu các điểm tham quan mà bạn lựa chọn với quãng đường quá xa, hay không muốn ảnh hưởng bởi chuyện mưa nắng trên suốt chuyến đi và quan trọng là có số người đông thì lúc này lựa chọn thuê xe ô tô hay xe du lịch lại là lựa chọn hợp lý.</p>
+                            <p> Tùy vào số lượng người đi du lịch cùng mình mà bạn có thể thuê những chiếc xe du lịch hợp lý, đa số trường hợp thuê xe riêng tự lái thường là nhóm du khách đi du lịch Phú Quốc theo gia đình có số lượng ít vì vậy thường họ sẽ thuê những chiếc xe 4 chỗ, 7 chỗ.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="experience">
+        <p>Kinh nghiệm du lịch Phú Quốc</p>
+        <ul>
+            <li>- Thời điểm lý tưởng nhất để đến Phú Quốc là từ khoảng tháng 10 đến tháng 4 năm sau.</li>
+            <li>- Phương tiện phổ biến để di chuyển trên Phú Quốc là xe máy. Ngoài ra bạn cũng có thể sử dụng taxi hoặc xe bus.</li>
+            <li>- Các điểm du lịch ở Phú Quốc được chia làm 4 khu chính là:
+                <br>
+                <span>+ Khu trung tâm ở thị trấn Dương Đông</span>
+                <br>
+                <span>+ Nam đảo</span>
+                <br>
+                <span>+ Bắc đảo và Đông đảo</span>
+                <br>
+            Tuỳ lịch trình, bạn nên dành ít nhất hai ngày nếu muốn khám phá hết các điểm vui chơi trên đảo.</li>
+            <li>- Một số đặc sản nổi tiếng Phú Quốc bạn có thể mua về làm quà là ngọc trai, nước mắm, hồ tiêu, rượu sim…</li>
+        </ul>
+        <p>Lưu ý:</p>
+        <ul>
+            <li>- Không nên đi Phú Quốc vào mùa mưa bão.</li>
+            <li>- Khách sạn, nhà nghỉ mùa cao điểm thường cháy phòng, bạn nên đặt trước khoảng một tháng.</li>
+            <li>- Một số địa điểm trên Phú Quốc không cho du khách vào tham quan, bạn cần tuyệt đối tuân thủ, không đi vào khu vực cấm.</li>
+            <li>- Phà và tàu cao tốc ra vào đảo thường chạy theo giờ cố định. Bạn nên hỏi kỹ thời gian hoạt động để không bị lỡ tàu, xe.</li>
+            <li>- Nếu say sóng, bạn nên chuẩn bị một ít thuốc chống say vì phải di chuyển nhiều trên biển.</li>
+            <li>– Nếu đi xe máy xuyên rừng, bạn nên tìm một chiếc bản đồ Phú Quốc phòng trường hợp lạc đường.</li>
+        </ul>
+    </div>
+    <div class="map">
+        <p>Bản đồ Phú Quốc</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251283.29516450138!2d103.87775455488683!3d10.237250552934523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a78c62b49eda17%3A0x8aa79fbbdd72cdb!2zUGjDuiBRdeG7kWM!5e0!3m2!1svi!2s!4v1692116557877!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="navigation">
+        <h1>Khám phá điểm đến khác</h1>
+        <nav>
+            <div class="nav-card">
+                <a href="/Nha_Trang/index.html">
+                    <div class="image">
+                    <img src="/Nha_Trang/Nha-trang.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>Nha Trang</p>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-card">
+                <a href="/Ha_Noi/index.html">
+                    <div class="image">
+                        <img src="/Ha_Noi/img/Ha-Noi.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>Hà Nội</p>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div id="rating-container">
+        <h1>Đánh giá điểm đến</h1>
+        <div class="rating-heading">
+            <div class="rating-overview-filter">
+                <div class="rating-filter" id="0-star">
+                    <span>Tất cả</span>
+                </div>
+                <div class="rating-filter" id="1-star">
+                    <span>1</span><i class="fa-solid fa-star"></i>
+                </div>
+                <div class="rating-filter" id="2-star">
+                    <span>2</span><i class="fa-solid fa-star"></i>
+                </div>
+                <div class="rating-filter" id="3-star">
+                    <span>3</span><i class="fa-solid fa-star"></i>
+                </div>
+                <div class="rating-filter" id="4-star">
+                    <span>4</span><i class="fa-solid fa-star"></i>
+                </div> 
+                <div class="rating-filter" id="5-star">
+                    <span>5</span><i class="fa-solid fa-star"></i>
+                </div>
+            </div>    
+        </div>
+        <div id="rating-list">
+            <div class="rating__list rating-list-1">
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="rating-content">
+                            <span>Có 1 vài điểm nói về địa điểm bị sai. Mong sớm sửa đổi!</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rating__list rating-list-2">
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>                            
+                        </div>
+                        <div class="rating-content">
+                            <span>Có 1 vài điểm nói về địa điểm bị sai. Mong sớm sửa đổi!</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rating__list rating-list-3">
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>                            
+                        </div>                        
+                        <div class="rating-content">
+                            <span>Khá ok!</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>                        
+                        <div class="rating-content">
+                            <span>Khá thích địa điểm này</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rating__list rating-list-4">
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="rating-content">
+                            <span>Tuyệt vời!</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rating__list rating-list-5">
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>                            
+                        </div>
+                        <div class="rating-content">
+                            <span>Recomment mọi người nên đến</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>                            
+                        </div>
+                        <div class="rating-content">
+                            <span>Tuyệt vời</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

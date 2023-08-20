@@ -1,0 +1,361 @@
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* Đặt class */
+.default{
+    background-color: white;
+    color: #0078c2;
+}
+.active{
+    background-color:#0078c2;
+    color: white;
+}
+a,li{
+    list-style-type: none;
+    text-decoration: none;
+}
+/* Heading-title */
+.title-text > h1 {
+    text-shadow: 0px 0px 20px #21ccf3;
+}
+.text{
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.heading-title {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+   
+.text .destination > p{
+    font-size: 1.5em;
+}
+/* Bảng thông tin điểm đến */
+.info-place{
+    width: 300px;
+    height: 360px;
+    color: #51af43;
+    text-align: justify;
+    border: 1px #51af43 solid;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.info-place i{
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.info-place > .fact{
+    margin: 1em;
+}
+.info-place h3{
+    text-align: center;
+    margin-top: 10px;
+}
+.heading{
+    text-align: center;
+}
+.heading .destination{
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.heading .destination p{
+    text-align: justify;
+    margin-top: 1em;
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-bottom: 3rem;
+}
+/* Discover Phú Quốc */
+.title {
+    width: 90vw;
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.discover{
+    width: 90vw;  
+    margin-left: auto;
+    margin-right: auto; 
+    border: 0.3rem #eee solid;
+    border-radius: 15px;
+}
+/* Tab - nav */
+.tabs-nav ul{
+    display: flex;
+}
+.tabs-nav{
+    width: 100%;
+    height: 20%;
+    margin-bottom: 0.5em;
+    background-color: #eee;
+}
+.tabs-nav li{
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 10px 10px 0 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer !important;
+}
+.landscapes,
+.foods,
+.actives,
+.transit{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+.item{
+    background-color: rgb(200, 200, 200);
+    margin: 5px;
+    cursor:  pointer !important;
+    border-radius: 10px;
+}
+.item .image{
+    width: 100%;
+    height: 15em;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+.item .image:hover img{
+    transform: scale(1.05);
+}
+.info{
+    text-align: center;
+    margin-bottom: 1em;
+}
+.info p:first-child{  
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+/* Hightbox */
+.hightbox-content{
+    width: 90.05vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: rgba(159, 159, 159, 0.259);
+}
+.hightbox-content > div{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    overflow-y: scroll;
+    padding: 0.5em 2em 2em;
+}
+.hightbox-content a{
+    margin-left: 100%;
+    font-size: 1.5em;
+    color: red;
+}
+.hightbox-content
+.hightbox-content .image > img{
+    width: 100%;
+    object-fit: cover;
+}
+.hightbox-content .describe{
+    text-align: justify;
+    margin-top: 2em;
+}
+.hightbox-content .describe *{
+    margin-top: 1em;
+}
+.hightbox-content .describe h2{
+    padding-bottom: 0.5em;
+    border-bottom: 0.5px #7a868e solid;
+}
+.hightbox-content .describe li{
+    margin-left: 2em;
+    list-style-type: disc;
+}
+/* Kinh nghiệm */
+.experience{
+    width: 90vw;
+    margin: 1.5em auto;
+    padding: 1.5em;
+    background-color: rgba(159, 159, 159, 0.259);
+    text-align: justify;
+    border-radius: 15px;
+}
+.experience li{
+    margin-bottom: 10px;
+}
+.experience p:not(:first-child){
+    color: red;
+    font-size: 1.5em;
+}
+/* MAP */
+.map{
+    width: 90vw;
+    margin: 2rem auto;
+}
+.map iframe{
+    width: 100%;
+}
+.map p,
+.experience p{
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Navigation */
+.navigation {
+    width: 90vw;
+    margin: auto;
+}
+.navigation nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.navigation a {
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+}
+.navigation > .nav-card {
+    width: 100vw;
+}
+.nav-card .image {
+    width: 100%;
+    height: 430px;
+}
+.nav-card img {
+    border-radius: 20px;
+}
+.nav-card .content {
+    position: absolute;
+    bottom: 20px;
+    left: 1em;
+    width: 70%;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eee;
+    font-size: 2.5em;
+    border-bottom: 2px #eee solid;
+}
+/* RATE PLACE */
+#rating-container {
+    border-top: 1px #7a868e solid;
+    background-color: #ebeced;
+}
+#rating-container > h1{
+    text-align: center;
+    margin: 1em 0;
+    text-transform: uppercase;
+}
+.rating-overview-filter {
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto;
+    margin: 1em auto;
+}
+.rating-heading {
+    background-color: #fffeef;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 5%;
+    border-radius: 15px;
+}
+.rating-overview-filter > .rating-filter {
+    margin: 0 15%;
+    border: 1px #7a868e solid;
+    cursor: pointer !important;
+    height: 2rem;
+    line-height: 2rem;
+    min-width: 6.25rem;
+    text-align: center;
+    padding: 0 0.625rem;
+    border-radius: 10px;
+}
+.rating-overview-filter > .rating-filter span {
+    font-weight: 700;
+}
+.rating-overview-filter > .rating-filter i{
+    color: rgb(255, 134, 4);
+}
+#rating-list {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+.rating__list {
+    display: flex;
+    flex-direction: column;
+}
+/* RATING ITEM */
+.rating-item {
+    display: flex;
+    padding: 1em 0 2em 5%;
+    border-bottom: 0.5px #7a868e solid;
+}
+.rating-item .rating-avatar {
+    margin-right: 1em;
+}
+.rating-item .rating-avatar span {
+    padding: 0.2em 0.3em;
+    border: 1px #000 solid;
+    border-radius: 50%;
+}
+.rating-item .rating-username {
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+.rating-item .rating-star i{
+    color: #dddde3;
+}
+.rating-item .rating-content {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.rating-item .rating-action {
+    color: rgb(11, 116, 229);
+    width: 7em;
+    text-align: center;
+    height: 2em;
+    line-height: 2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.rating-item .rating-action .like {
+    border-radius: 5px;
+    border: 1px solid rgb(11, 116, 229);
+}

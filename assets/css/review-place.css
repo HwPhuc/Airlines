@@ -199,6 +199,7 @@ h1 {
     background-color: white;
     overflow-y: scroll;
     padding: 0.5em 2em 2em;
+    background-color: #d6eefc;
 }
 .hightbox-content > div:first-child > a{
     margin-left: 100%;

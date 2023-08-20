@@ -51,10 +51,15 @@ $(document).ready(() => {
         }
     });
     //Số lượng đánh giá
-    for(var i = 1; i <= 5; i++) {
-        var amount = $(".rating-list-" + i).length;
-        $("#" + i + "-star > i").append(" (" + amount + ")");
-    }
+    // for(var i = 1; i <= 5; i++) {
+    //     // var amount = $(".rating-list-" + i).length;
+    //     var amount = 0;
+    //     for(var c of $(".rating-list-" + i))
+    //     {
+    //         amount = amount + 1;
+    //     }
+    //     $("#" + i + "-star > i").append(" (" + amount + ")");
+    // }
     // Click like
     $(".like").one("click", function(){
         $(this).css("background-color", "rgb(219, 238, 255)");

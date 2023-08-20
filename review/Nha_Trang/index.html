@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/mobile.css" media="screen and (max-width: 500px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/main.js"></script>
+</head>
+<body>
+    <div class="title-text" style="background-image: url(/Nha_Trang/Nha-trang.jpg);">
+        <h1>Nha Trang</h1>
+    </div>
+    <div class="heading-title">
+        <div class="text">
+            <div class="destination">
+                <p>
+                    Là thành phố trung tâm của tỉnh Khánh Hòa, nằm trên bờ biển Nam Trung Bộ, Nha Trang được mệnh danh là thiên đường du lịch biển của Việt Nam, hấp dẫn du khách từ khắp nơi trên thế giới với những hòn đảo thơ mộng, bãi biển xanh biếc. Đến với Nha Trang, du khách sẽ có cơ hội đắm mình trong làn nước xanh ngắt, vùi mình trong bãi cát mịn, đi dạo dọc bờ biển, nằm dài trên cát nghe tiếng sóng xô bờ hay có những giây phút nhìn ngắm bình minh, hoàng hôn đẹp đến ngỡ ngàng.
+                </p>
+            </div>    
+        </div> 
+        <div class="info-place">
+            <h3>Thông tin điểm đến</h3>
+            <div class="fact">
+                <i class="fa-regular fa-clock"></i>
+                <span id="time"></span>
+            </div>
+            <div class="fact">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Ngôn ngữ: Tiếng Việt và Tiếng Anh</span>
+            </div>
+            <div class="fact">
+                <i class="fa-solid fa-money-bill-wave"></i>
+                <span>Tiền tệ: Việt Nam Đồng (VNĐ)</span>
+            </div>
+            <div class="fact">
+                <i class="fa-regular fa-calendar-check"></i>
+                <span>Thời điểm đi du lịch lý tưởng: Từ tháng 06 đến tháng 09</span>
+            </div>
+            <div class="fact">
+                <i class="fa-brands fa-cc-visa"></i>
+                <span>VISA: Miễn thị thực với thời hạn tạm trú không quá 15 ngày kể từ ngày nhập cảnh</span>
+            </div>
+        </div>
+    </div>   
+    <div class="title">
+        <p>Khám phá Phú Quốc</p>
+    </div>
+    <div class="discover">
+        <div class="tabs-nav">
+            <ul class="sub-tabs-nav">
+                <li id="tab-link-1">Cảnh đẹp</li>
+                <li id="tab-link-2">Ẩm thực</li>
+                <li id="tab-link-3">Hoạt động</li>
+                <li id="tab-link-4">Di chuyển</li>
+            </ul>
+        </div>
+        <div class="landscapes tab-content" id="tab-content-1">
+            <div class="item #1" id="item-1">
+                <div class="image">
+                    <img src="img/Landscapes/nhatrang-vinhvanphong.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Vịnh Vân Phong</p>
+                    <p>huyện Vạn Ninh - Ninh Hoà</p>
+                </div>
+            </div>
+            <div class="item #1" id="item-2">
+                <div class="image">
+                    <img src="img/Landscapes/nhatrang-DaoDiepSon.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Đảo điệp sơn</p>
+                    <p>Vịnh Vân Phong</p>
+                </div>
+            </div>
+            <div class="item #1" id="item-3">
+                <div class="image">
+                    <img src="img/Landscapes/nhatrang-BaiDai.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Bãi Dài</p>
+                    <p>Hùng Vương, Thành phố Cam Ranh</p>
+                </div>
+            </div>
+            <div class="item #1" id="item-4">
+                <div class="image">
+                    <img src="img/Landscapes/nhatrang-HonMun.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>HÒN MUN</p>
+                    <p>Đảo Bồng Nguyên, Vĩnh Nguyên</p>
+                </div>
+            </div>
+            <div class="item #1" id="item-5">
+                <div class="image">
+                    <img src="img/Landscapes/nhatrang-baitru.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>BÃI TRŨ</p>
+                    <p>Đảo Hòn Tre</p>
+                </div>
+            </div>
+            <div class="item #1" id="item-6">
+                <div class="image">
+                    <img src="img/Landscapes/nhatrang-Thacyangbay.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>THAC YANGBAY</p>
+                    <p>Thôn Ngã Ha, Xã Khánh Phú, huyện Khánh Vinh</p>
+                </div>
+            </div>
+        </div>
+        <div class="more-1">
+            <div class="hightbox-content hightbox-content-1">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/nhatrang-vinhvanphong.jpg" alt="">
+                    </div>
+                    <div class="content">                    
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Vịnh Vân Phong</h2>
+                                <p>Huyện Vạn Ninh - Ninh Hoà</p>
+                            </div> 
+                            <p>
+                                Không thể bỏ qua vịnh Vân Phong khi du lịch Nha Trang. Vì nằm khá xa trung tâm thành phố, khoảng 40km về phía Bắc, nên Vịnh Vân Phong khoác lên mình một vẻ đẹp hoang sơ, mộc mạc và bình yên vô cùng. Vịnh Vân Phong ẩn hiện sau làn sương mờ như một cánh cổng vào cõi thiên thai mà bất kỳ ai cũng muốn được một lần khám phá.
+                            </p>                        
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-2">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/nhatrang-DaoDiepSon.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>ĐẢO ĐIỆP SƠN</h2>
+                                <p>Nằm trong Vịnh Vân Phong</p>
+                            </div>
+                            <p>Lẩn khuất trong vùng vịnh Ninh Vân là hòn đảo Điệp Sơn hiện lên như một điểm đặc sắc của Nha Trang. Hòn đảo bao gồm 3 đảo nhỏ là Hòn Bịp, Hòn Giữa và Hòn Đuốc thông với nhau bằng con đường cát lung linh, nơi đây còn lưu giữ dãy núi nguyên sinh Điệp Sơn hoang sơ và thơ mộng. Nếu đã đặt chân đến Nha Trang thì bất cứ ai cũng không thể bỏ lỡ nơi này.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-3">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/nhatrang-BaiDai.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>BÃI DÀI</h2>
+                                <p>Hùng Vương, Thành phố Cam Ranh</p>
+                            </div>
+                            <p>
+                                Nếu có dịp tới Bãi Dài vào ban ngày, bạn sẽ thấy bầu trời dưới mặt nước trong như tấm thủy tinh, phản chiếu, ôm gọn bầu trời cao phía trên vào trong lòng biển. Bãi Dài cũng là nơi có đầy đủ các dịch vụ trên biển và các nhà hàng hải sản tươi sống nổi tiếng của Nha Trang.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-4">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/nhatrang-HonMun.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Hòn Mun</h2>
+                                <p>Đảo Bồng Nguyên, Vĩnh Nguyên</p>
+                            </div>
+                            <p>
+                                Theo kinh nghiệm du lịch Nha Trang, lặn biển là một hoạt động thú vị nhất khi đến với các thành phố biển. Và vùng nước cạn của Khu bảo tồn biển Hòn Mun là một trong những nơi tốt nhất để lặn và học cách lặn. Nơi đây tập trung nhiều loại sinh vật biển và san hô đầy màu sắc độc đáo. Ngoài ra, bạn cũng có thể ngồi thuyền để tham quan các hòn đảo nhỏ thoạt nhìn hoang sơ nhưng đầy thơ mộng và êm đềm tại đây.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-5">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/nhatrang-baitru.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>BÃI TRŨ</h2>
+                                <p>Đảo Hòn Tre</p>
+                            </div>
+                            <p>
+                                Lặn biển là một hoạt động thú vị nhất khi đến với các thành phố biển. Và vùng nước cạn của Khu bảo tồn biển Hòn Mun là một trong những nơi tốt nhất để lặn và học cách lặn. Nơi đây tập trung nhiều loại các nhiệt đới nhỏ đầy màu sắc rất độc đáo và thú vị. Ngoài ra, bạn cũng có thể ngồi thuyền để tham quan các hòn đảo nhỏ thoạt nhìn hoang sơ nhưng đầy thơ mộng và êm đềm tại đây.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-6">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/nhatrang-Thacyangbay.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>THAC YANGBAY</h2>
+                                <p>Thôn Ngã Ha, Xã Khánh Phú, huyện Khánh Vinh</p>
+                            </div>
+                            <p>Đến Yang Bay, du khách có cơ hội tham quan “Mộc Thần” – cây cổ thụ cao trên 25 m, một trong những cây cổ thụ lớn nhất Khánh Hòa. Ngồi xe điện tham quan Vườn Hồng 999 đóa, Vườn Địa Đàng, Khu bảo tồn gấu hoang dã, đà điểu, công, thỏ… tham gia trò chơi dân gian như: đua heo, chọi gà, câu gấu, cưỡi ngựa, bắn cung, bắn nỏ, ném lao… Hoặc ngâm mình thư giãn trong hồ khoáng nóng, ngắm dòng thác Ho Cho trắng xóa.</p>
+                            <p>Buổi trưa du khách có thể ghé thăm các nhà hàng nơi đây thưởng thức đặc sản núi rừng, những món ăn độc đáo của người Raglay, rồi tiếp tục khám phá đời sống phong tục tập quán của người dân tộc nơi đây. Thưởng thức tiếng Đàn Chapi huyền thoại Đhay và các điệu múa mộc mạc nhưng “đầy lửa” của người Raglay.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+        <div class="foods tab-content" id="tab-content-2">
+            <div class="item #2" id="item-1">
+                <div class="image">
+                    <img src="img/Foods/nha-trang-nem.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Nem nướng Nha Trang</p>
+                </div>
+            </div>
+            <div class="item #2" id="item-2">
+                <div class="image">
+                    <img src="img/Foods/nha-trang-hai-san.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Hải sản Làng Chài</p>
+                </div>
+            </div>
+            <div class="item #2" id="item-3">
+                <div class="image">
+                    <img src="img/Foods/nhatrang-bunsua.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Bún sứa</p>
+                </div>
+            </div>
+            <div class="item #2" id="item-4">
+                <div class="image">
+                    <img src="img/Foods/nhatrang-bonuong.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Bò nướng lạc cảnh</p>
+                </div>
+            </div>
+            <div class="item #2" id="item-5">
+                <div class="image">
+                    <img src="img/Foods/nhatrang-chaca.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Chả cá Nha Trang</p>
+                </div>
+            </div>
+        </div>
+        <div class="more-2">
+            <div class="hightbox-content hightbox-content-1">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Foods/nha-trang-nem.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Nem nướng Nha Trang</h2>
+                            </div>
+                            <p>Một đặc sản nữa bạn nên thử khi du lịch Nha Trang chính là nem Ninh Hòa , được chế biến từ da heo thái sợi và được gói bằng lá chùm ruột hoặc lá khế còn non để để tạo mùi thơm. Ăn nem Ninh Hòa, bạn sẽ cảm nhận được mùi thơm của thịt hòa quyện cùng vị chua dịu, ngọt, giòn và cay nhẹ của gia vị đi kèm.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-2">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Foods/nha-trang-hai-san.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>HẢI SẢN LÀNG CHÀI</h2>
+                            </div>
+                            <p>Nha Trang là thành phố ven biển nên hải sản ở đây phong phú và tươi ngon hơn hẳn. Đến với khu vực làng chài, bạn sẽ được ăn các loại hải sản tươi sống và được chế biến hợp theo khẩu vị. Ngoài các món cá, tôm, mực, sò huyết, ốc… bạn hãy thử qua các món nướng độc đáo như món cá tắc kè nướng chấm muối ớt với thịt dai, thơm và ngọt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-3">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Foods/nhatrang-bunsua.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>BÚN SỨA NHA TRANG</h2>
+                            </div>
+                            <p>Bún sứa là món ăn đặc trưng của vùng đất xứ biển. Sứa vốn là món ăn ngon, bổ, mát và có tính giải nhiệt cao, nhất là vào những ngày hè. Bún sứa có ở nhiều nơi nhưng bún sứa Nha Trang là nổi tiếng hơn cả. Miếng sứa giòn ngọt cùng nước lèo đậm đà làm say lòng những thực khách lần đầu nếm qua và đọng mãi trong lòng những người con nơi đây.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-4">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Foods/nhatrang-bonuong.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>THỊT BÒ NƯỚNG LẠC CẢNH</h2>
+                            </div>
+                            <p>Đừng tưởng đến thành phố biển du lịch Nha Trang là có thể bỏ qua các món thịt. Thịt bò nướng Lạc Cảnh là đặc sản nơi đây mà bất kỳ thực khách nào cũng phải xuýt xoa khi nếm thử. Bí quyết tạo nên sự ngon lành cho món ăn là công thức trộn thịt bò với mật ong cùng hơn 10 gia vị độc đáo. Thịt được thái viên, nướng trên than hoa và ăn kèm với rau sống. Đêm gió mát ngồi thưởng thức từng miếng thịt bò đậm đà và giòn ngọt quả là tuyệt vời.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-5">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Foods/nhatrang-chaca.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>CHẢ CÁ NHA TRANG</h2>
+                            </div>
+                            <p>Nguyên liệu làm chả cá là các loại cá tươi như cá mối, cá thu, cá thởn, cá nhồng, cá chuồn… được giã nhuyễn và ướp gia vị. Miếng chả cá chiên vàng, thơm phưng phức khiến bạn ăn rồi chỉ muốn ăn miếng nữa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="actives tab-content" id="tab-content-3">
+            <div class="item #3" id="item-1">
+                <div class="image">
+                    <img src="img/Actives/nhatrang-vinpearl.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>KHÁM PHÁ VINPEARL LAND</p>
+                </div>
+            </div>
+            <div class="item #3" id="item-2">
+                <div class="image">
+                    <img src="img/Actives/nhatrang-du.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>LƯỢN DÙ TRÊN BIỂN</p>
+                </div>
+            </div>
+            <div class="item #3" id="item-3">
+                <div class="image">
+                    <img src="img/Actives/nhatrang-tambun.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Tắm bùn</p>
+                </div>
+            </div>
+        </div>
+        <div class="more-3">
+            <div class="hightbox-content hightbox-content-1">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Actives/nhatrang-vinpearl.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>KHÁM PHÁ VINPEARL LAND</h2>
+                            </div>
+                            <p>Hãy ghé thăm Vinpearl Land nằm trên đảo Hòn Tre, vịnh Nha Trang để chiêm ngưỡng nhiều công trình hiện đại, đặc sắc. Đến tham quan tại Vinpearl du khách có cơ hội được đi cáp treo biển dài nhất thế giới với chiều dài hơn 3km, được thỏa sức vui chơi trong khu công viên nước Vinpearl rộng 60.000 mét vuông với nhiều trò chơi và dịch vụ hấp dẫn như: các trò chơi cảm giác mạnh (tàu lượng siêu tốc, nhảy bungee,..), xem xiếc cá heo, tham quan thủy cung Vinpearl với hơn 300 loài cá đẹp và lạ, thưởng thức nhạc nươc ngoài trời với sân khấu hoành tráng, thưởng thức ẩm thực biển tại làng ẩm thực Vinpearl,…</p>
+                            <p>Giá vé Vinpearl bao gồm hai lượt di chuyển đi – về bằng cáp treo hoặc phà; tham gia mọi trò chơi tại khu vui chơi giải trí và công viên nước Vinpearl, tham quan thủy cung Vinpearl…).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-2">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Actives/nhatrang-du.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>LƯỢN DÙ TRÊN BIỂN</h2>
+                            </div>
+                            <p>Là một trong các môn thể thao mạo hiểm trên biển hấp dẫn nhất, dù bay mang đến cảm xúc không thể tả. Trước khi bay, sẽ có huấn luyện viên hướng dẫn trực tiếp cho bạn cách bay dù lượn.</p>
+                            <p>Vì lên tới độ cao 50-70m cũng khá nguy hiểm nên bạn cần lưu ý và nắm rõ những điều huấn luyện viên nói. Nếu bạn lo sợ, không dám bay một mình, thì yên tâm, luôn có những huấn luyện viên ở đây sẵn sàng đồng hành cùng bạn.</p>
+                            <p>Hiện nay rất nhiều điểm du lịch ở Nha Trang đã có bộ môn thể thao này. Đặc biệt là những nơi có biển, đảo. Chơi dù lượn Nha Trang phải kể đến các địa điểm du lịch đang hot như: bãi Tranh, đảo San Hô, Vinpearl Nha Trang, Dốc Lết, Hòn Tằm.</p>                
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-3">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Actives/nhatrang-tambun.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>TẮM BÙN</h2>
+                            </div>
+                            <p>Nhắc đến du lịch Nha Trang, không ai có thể quên được dịch vụ Tắm bùn khoáng nổi tiếng như một “biểu tượng du lịch” Nha Trang.</p>
+                            <p>Hầu hết các khu tắm Bùn khoáng tại Nha Trang đều sử dụng nguồn bùn khoáng tự nhiên được hình thành trên sự biến đổi của địa chất, được khai thác và vận chuyển từ mỏ bùn khoáng tự nhiên ngay trên địa bàn tỉnh Khánh Hoà. Bùn khoáng tại đây có chứa các hàm lượng sắt, mangan, kẽm đồng hoặc Selenium … có tính sát khuẩn cao hơn nhiều so với các vùng khác trên cả nước; không chỉ vậy, bùn còn được lọc với hệ thống lọc hiện đại. Nhờ đó, tắm bùn khoáng có thể giúp bạn chữa trị các loại bệnh khác nhau như giảm viêm, chữa bệnh khớp và các bệnh mãn tính nhẹ nhàng.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="transit tab-content" id="tab-content-4">
+            <div class="item #4" id="item-1">
+                <div class="image">
+                    <img src="/Ha_Noi/img/Transit/may-bay.webp" alt="">
+                </div>
+                <div class="info">
+                    <p>MÁY BAY</p>
+                </div>
+            </div>
+            <div class="item #4" id="item-2">
+                <div class="image">
+                    <img src="/Ha_Noi/img/Transit/o-to.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Ô TÔ</p>
+                </div>
+            </div>
+            <div class="item #4" id="item-3">
+                <div class="image">
+                    <img src="/Ha_Noi/img/Transit/tau_hoa.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>TÀU HOẢ</p>
+                </div>
+            </div>
+            <div class="item #4" id="item-4">
+                <div class="image">
+                    <img src="Nha-trang.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Di chuyển trong thành phố</p>
+                </div>
+            </div>
+        <div class="more-4">
+            <div class="hightbox-content hightbox-content-1">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="/Ha_Noi/img/Transit/may-bay.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Máy bay</h2>
+                            </div>
+                            <p>Du khách có thể đến Nha Trang bằng xe khách, tàu hỏa hoặc xe máy nếu bạn thuộc tuýp người ưa thích mạo hiểm. Tuy nhiên máy bay là phương tiện được ưu tiên hàng đầu vì tính nhanh chóng và an toàn. Thậm chí nếu bạn săn được những tấm vé ưu đãi thì chi phí cũng không quá chênh lệch so với giá xe khách.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-2">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="/Ha_Noi/img/Transit/o-to.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Ô tô</h2>
+                            </div>
+                            <p>Bạn cũng có thể đến với Nha Trang bằng phương tiện ô tô tự lái và dạng xe khách. Đường sá đi đến Nha Trang khá thuận lợi, với nhiều con đường cao tốc được xây dựng lên đã giúp rút ngắn thời gian, quãng đường và giúp di chuyển đến đây dễ dàng hơn bao giờ hết.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-3">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="/Ha_Noi/img/Transit/tau_hoa.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Tàu hoả</h2>
+                            </div>
+                            <p>
+                                Tàu hỏa là phương tiện phù hợp cho những ai muốn nhìn ngắm cảnh sắc trên đường đi. Hơn nữa, chỗ ngồi trên tàu hỏa cũng có đa dạng sự lựa chọn như giường nằm 4, giường nằm 6, ghế mềm, ghế cứng,… và các tiện ích như nhà vệ sinh, phục vụ đồ ăn,… Bù lại, thời gian di chuyển bằng tàu hỏa đến Nha Trang khá lâu, khoảng 9 tiếng khi xuất phát từ TP. Hồ Chí Minh và 24 giờ khi xuất phát từ Hà Nội.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-4">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="Nha-trang.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Di chuyển trong thành phố</h2>
+                            </div>
+                            <p>Đi dạo quanh Nha Tranh rất dễ dàng và thú vị bởi đường phố được thiết kế lối đi bộ và lối đi dạo dọc theo bãi biển rất quy củ. Để đỡ mệt, bạn có thể thuê xe đạp hoặc taxi để thỏa sức vi vu và ngắm nhìn khung cảnh Nha Trang một cách gần gũi nhất. Nếu muốn đi xa và nhanh hơn, bạn có thể đi taxi hoặc liên hệ với khách sạn nơi bạn nghỉ để thuê một chiếc xe máy và thỏa sức ghé đến các khu vực ngoại ô.</p>
+                            <p>Không gian biển Nha Trang cực kỳ thoáng đãng và thanh bình. Đến đây, bạn sẽ thỏa sức ngắm nhìn những bãi tắm đẹp, tham gia các hoạt động giải trí đặc sắc trên biển và thưởng thức những món ăn biển đậm đà. Đặc biệt, sự hiếu khách của người dân Nha Trang sẽ khiến bạn xao xuyến không thôi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="experience">
+        <p>Kinh nghiệm du lịch Nha Trang</p>
+        <ul>
+            <li>– Nhiệt độ trung bình của Nha Trang vào khoảng 26 hoặc 27 độ C nên nếu sắp xếp được thời gian, du khách có thể đến đây vào bất cứ thời điểm trong năm. Thời tiết Nha Trang khá nóng vào mùa hè và mát mẻ vào mùa thu nên thời điểm lí tưởng nhất để du lịch Nha Trang là từ tháng 7 đến tháng 9 hàng năm, thuận lợi cho các hoạt động giải trí trên biển như lặn biển, lướt ván, kayak, nhảy dù…hay nhẹ nhàng hơn thì tắm nắng, xây lâu đài cát, chơi bóng chuyền bãi biển cũng sẽ giúp bạn có những giây phút thư giãn tuyệt vời.</li>
+            <li>– Khoảng tháng 7, tháng 8 rơi vào kỳ nghỉ hè của học sinh các cấp tại Việt Nam nên rất nhiều gia đình tranh thủ thời gian để nghỉ dưỡng tại đây. Đây cũng chính là mùa cao điểm du lịch nên giá dịch vụ tại Nha Trang khá đắt đỏ. Nếu du khách muốn một không gian yên tĩnh để thoải mái nghỉ dưỡng thì hãy cân nhắc khi đến đây vào thời gian này.</li>
+            <li>– Tháng 10 và tháng 11 là mùa mưa ở miền Nam nên chuyến du lịch của du khách sẽ gặp trở ngại bởi các cơn mưa, không những mưa rả rích mà những tháng cuối năm ở Nha Trang còn kèm theo cả gió mùa se lạnh.</li>
+            <li>– Hãy mang theo kem chống nắng và chuẩn bị sẵn ô/áo mưa bên cạnh khi di du lịch Nha Trang.</li>
+        </ul>
+    </div>
+    <div class="map">
+        <p>Bản đồ Nha Trang</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d128413.86123689738!2d109.18545015433553!3d12.269057956308176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3170677811cc886f%3A0x5c4bbc0aa81edcb9!2zTmhhIFRyYW5nLCBLaMOhbmggSMOyYSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1692514467952!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="navigation">
+        <h1>Khám phá điểm đến khác</h1>
+        <nav>
+            <div class="nav-card">
+                <a href="/Phu_Quoc/index.html">
+                    <div class="image">
+                    <img src="/Phu_Quoc/img/PhuQuoc-1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>Phú Quốc</p>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-card">
+                <a href="/Ha_Noi/index.html">
+                    <div class="image">
+                        <img src="/Ha_Noi/img/Ha-Noi.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>Hà Nội</p>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div id="rating-container">
+        <h1>Đánh giá điểm đến</h1>
+        <div class="rating-heading">
+            <div class="rating-overview-filter">
+                <div class="rating-filter" id="0-star">
+                    <span>Tất cả</span>
+                </div>
+                <div class="rating-filter" id="1-star">
+                    <span>1</span><i class="fa-solid fa-star"></i>
+                </div>
+                <div class="rating-filter" id="2-star">
+                    <span>2</span><i class="fa-solid fa-star"></i>
+                </div>
+                <div class="rating-filter" id="3-star">
+                    <span>3</span><i class="fa-solid fa-star"></i>
+                </div>
+                <div class="rating-filter" id="4-star">
+                    <span>4</span><i class="fa-solid fa-star"></i>
+                </div> 
+                <div class="rating-filter" id="5-star">
+                    <span>5</span><i class="fa-solid fa-star"></i>
+                </div>
+            </div>    
+        </div>
+        <div id="rating-list">
+            <div class="rating__list rating-list-1">
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="rating-content">
+                            <span>Có 1 vài điểm nói về địa điểm bị sai. Mong sớm sửa đổi!</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rating__list rating-list-2">
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>                            
+                        </div>
+                        <div class="rating-content">
+                            <span>Có 1 vài điểm nói về địa điểm bị sai. Mong sớm sửa đổi!</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rating__list rating-list-3">
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>                            
+                        </div>                        
+                        <div class="rating-content">
+                            <span>Khá ok!</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>                        
+                        <div class="rating-content">
+                            <span>Khá thích địa điểm này</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rating__list rating-list-4">
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="rating-content">
+                            <span>Tuyệt vời!</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rating__list rating-list-5">
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>                            
+                        </div>
+                        <div class="rating-content">
+                            <span>Recomment mọi người nên đến</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>                            
+                        </div>
+                        <div class="rating-content">
+                            <span>Tuyệt vời</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

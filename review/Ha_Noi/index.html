@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/mobile.css" media="screen and (max-width: 500px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/main.js"></script>
+</head>
+<body>
+    <div class="title-text" style="background-image: url(/Ha_Noi/img/Ha-Noi.jpg);">
+        <h1>Hà Nội</h1>
+    </div>
+    <div class="heading-title">
+        <div class="text">
+            <div class="destination">
+                <p>
+                    Được mệnh danh là “trái tim của Việt Nam”, Thủ Đô Hà Nội lưu giữ những vẻ đẹp tuyệt mỹ từ cảnh quan, mang đến cho bạn những cảm nhận và những trải nghiệm đa dạng về lịch sử, văn hóa, con người, ẩm thực của Việt Nam. Bởi vậy, khi đặt chân tới Hà Nội, du khách sẽ ngỡ ngàng và có một niềm yêu mến đặc biệt dành cho những cảnh quan, các công trình di tích lịch sử cũng như sự thanh lịch và vô cùng tinh tế của người Hà thành. Tất cả những điểm chạm thú vị của Hà Nội đang ẩn mình trong từng ngóc ngách, con phố và chờ du khách đến khám phá!
+                </p>
+            </div>    
+        </div> 
+        <div class="info-place">
+            <h3>Thông tin điểm đến</h3>
+            <div class="fact">
+                <i class="fa-regular fa-clock"></i>
+                <span id="time"></span>
+            </div>
+            <div class="fact">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Ngôn ngữ: Tiếng Việt và Tiếng Anh</span>
+            </div>
+            <div class="fact">
+                <i class="fa-solid fa-money-bill-wave"></i>
+                <span>Tiền tệ: Việt Nam Đồng (VNĐ)</span>
+            </div>
+            <div class="fact">
+                <i class="fa-regular fa-calendar-check"></i>
+                <span>Thời điểm đi du lịch lý tưởng: Mùa Thu (Từ tháng 08 đến tháng 11). Du khách cũng có thể tới Hà Nội quanh năm vì mỗi mùa có một nét đặc trưng riêng</span>
+            </div>
+            <div class="fact">
+                <i class="fa-brands fa-cc-visa"></i>
+                <span>VISA: Miễn thị thực với thời hạn tạm trú không quá 15 ngày kể từ ngày nhập cảnh</span>
+            </div>
+        </div>
+    </div>   
+    <div class="title">
+        <p>Khám phá Phú Quốc</p>
+    </div>
+    <div class="discover">
+        <div class="tabs-nav">
+            <ul class="sub-tabs-nav">
+                <li id="tab-link-1">Cảnh đẹp</li>
+                <li id="tab-link-2">Ẩm thực</li>
+                <li id="tab-link-3">Hoạt động</li>
+                <li id="tab-link-4">Di chuyển</li>
+            </ul>
+        </div>
+        <div class="landscapes tab-content" id="tab-content-1">
+            <div class="item #1" id="item-1">
+                <div class="image">
+                    <img src="img/Landscapes/Quang-truong-BaDinh.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Quảng trường Ba Đình</p>
+                    <p>Đường Hùng Vương, Điện Biên, Quận Ba Đình</p>
+                </div>
+            </div>
+            <div class="item #1" id="item-2">
+                <div class="image">
+                    <img src="img/Landscapes/van-mieu-quoc-tu-giam.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Văn Mếu Quốc tự giám</p>
+                    <p>58 Quốc Tự Giám, Phường Văn Miếu, Quận Đống Đa</p>
+                </div>
+            </div>
+            <div class="item #1" id="item-3">
+                <div class="image">
+                    <img src="img/Landscapes/ho-hoan-kiem.png" alt="">
+                </div>
+                <div class="info">
+                    <p>Hồ Hoàn Kiếm</p>
+                    <p>Quận Hoàn Kiếm</p>
+                </div>
+            </div>
+            <div class="item #1" id="item-4">
+                <div class="image">
+                    <img src="img/Landscapes/ho-tay.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Hồ Tây</p>
+                    <p>Quận Tây Hồ</p>
+                </div>
+            </div>
+            <div class="item #1" id="item-5">
+                <div class="image">
+                    <img src="img/Landscapes/cau-long-bien-ha-noi.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Cầu Long Biên</p>
+                    <p>Nối liền Quận Hoàn Kiếm và Quận Long Biên</p>
+                </div>
+            </div>
+            <div class="item #1" id="item-6">
+                <div class="image">
+                    <img src="img/Landscapes/nha-tho-lon-ha-noi.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Nhà Thờ Lớn</p>
+                    <p>40 Nhà Chung, phường Hàng Trống, quận Hoàn Kiếm</p>
+                </div>
+            </div>
+            <div class="item #1" id="item-7">
+                <div class="image">
+                    <img src="img/Landscapes/hanoi-chua-mot-cot.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Nhà Thờ Lớn</p>
+                    <p>40 Nhà Chung, phường Hàng Trống, quận Hoàn Kiếm</p>
+                </div>
+            </div>
+            <div class="item #1" id="item-8">
+                <div class="image">
+                    <img src="img/Landscapes/hanoi-hoang-thanh.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Hoàng Thành Thăng Long</p>
+                    <p>19C Hoàng Diệu, phường Điện Biên, quận Ba Đình</p>
+                </div>
+            </div>
+            <div class="item #1" id="item-9">
+                <div class="image">
+                    <img src="img/Landscapes/hanoi-hoa-lo.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Nhà tù Hoả Lò</p>
+                    <p>Phố Hoả Lò, phường Trần Hưng Đạo, quận Hoàn Kiếm</p>
+                </div>
+            </div>
+        </div>
+        <div class="more-1">
+            <div class="hightbox-content hightbox-content-1">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/Quang-truong-BaDinh.jpg" alt="">
+                    </div>
+                    <div class="content">                    
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>QUẢNG TRƯỜNG BA ĐÌNH – LĂNG CHỦ TỊCH HỒ CHÍ MINH</h2>
+                                <p>Đường Hùng Vương, phường Điện Biên, quận Ba Đình</p>
+                            </div>
+                            <p>Nếu đã đặt chân tới mảnh đất ngàn năm văn hiến thì Lăng Bác – Quảng trường Ba Đình là địa điểm du lịch ở Hà Nội mà các bạn không thể bỏ qua. Nơi đây là trung tâm chính trị của Việt Nam với nhà Quốc hội, Phủ Chủ tịch, Bảo tàng Hồ Chí Minh,...</p>
+                            <p>Trong đó, Lăng Bác là nơi lưu giữ thi hài của vị lãnh tụ kính yêu – Chủ tịch Hồ Chí Minh. Theo kinh nghiệm du lịch Hà Nội, bạn có thể đến lăng tham quan vào sáng thứ 3,4,5,7 và chủ nhật. Khi vào viếng lăng Bác, bạn chú ý ăn mặc chỉnh tề, không đem theo các thiết bị điện tử ghi hành và giữ trật tự trong lăng.</p></p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-2">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/van-mieu-quoc-tu-giam.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>VĂN MIẾU – QUỐC TỬ GIÁM</h2>
+                                <p>58 Quốc Tử Giám, phường Văn Miếu, quận Đống Đa</p>
+                            </div>
+                            <p>Đây cũng là một điểm đến không thể bỏ xót khi tới Hà Nội, địa chỉ này được xem là biểu tượng của tri thức, của nền giáo dục Việt Nam. Đây là nơi thờ phụng các bậc Tiên thánh, Tiên sư của đạo Nho và Tư nghiệp Quốc Tử Giám Chu Văn An – người thầy tiêu biểu về đạo cao, đức trọng của nền giáo dục Việt Nam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-3">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/ho-hoan-kiem.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>HỒ HOÀN KIẾM (HỒ GƯƠM)</h2>
+                                <p>Quận Hoàn Kiếm</p>
+                            </div>
+                            <p>
+                                Hồ Gươm hay Hồ Hoàn Kiếm là một trong những nơi nên đến ở Hà Nội khi du lịch thủ đô. Nằm ở giữa trung tâm, Hồ Gươm được ví như trái tim của thành phố ngàn năm tuổi này… Mặt hồ như tấm gương lớn soi bóng những cây cổ thụ, những rặng liễu thướt tha tóc rủ, những mái đền, chùa cổ kính, tháp cũ rêu phong, các toà nhà mới cao tầng vươn lên trời xanh.
+                            </p>
+                            <p>
+                                Một trải nghiệm thú vị dành cho khách du lịch là đi bộ một vòng hồ, bạn sẽ được thấy một Hà Nội cổ kính nhưng vẫn đầy hiện đại hiện lên thật rõ ràng. Bên cạnh hồ là những công trình kiến trúc như tháp Bút, đài Nghiên, cầu Thê Húc dẫn vào đền Ngọc Sơn, đền vua Lê Thái Tổ, tháp Hoà Phong,…
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-4">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/ho-tay.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>HỒ TÂY</h2>
+                                <p>Quận Tây Hồ</p>
+                            </div>
+                            <p>
+                                Đây là khu vực nằm không xa trung tâm thành phố và có diện tích lớn nhất Hà Nội. Bạn có thể thuê xe đạp nước hoặc đi du thuyền quanh Hồ Tây để tham quan và khám phá vẻ đẹp nơi đây. Theo kinh nghiệm du lịch Hà Nội của nhiều du khách, bạn nên đến hồ Tây vào buổi chiều để có thể chiêm ngưỡng cảnh mặt trời lặng vô cùng lãng mạn.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-5">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+
+                                <h2>CẦU LONG BIÊN</h2>
+                                <p>Nối liền quận Hoàn Kiếm và quận Long Biên</p>
+                            </div>
+                            <p>
+                                Cầu Long Biên được thiết kế và xây dựng theo phong cách kiến trúc nổi tiếng Pháp bởi công ty Daydé & Pillé (Paris, Pháp).
+                            </p>
+                            <p>
+                                Trải qua giai đoạn hơn 100 năm lịch sử thăng trầm cùng với nhiều biến cố lịch sử, cầu Long Biên vẫn hiên ngang giữa đất trời và trở thành một biểu tượng vô cùng ý nghĩa đối với người dân Thủ đô. Cây cầu minh chứng lịch sử này còn là địa điểm tham quan lý tưởng của du khách thập phương khi du lịch Hà Nội
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-6">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/nha-tho-lon-ha-noi.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Nhà thờ Lớn Hà nội</h2>
+                                <p>40 Nhà Chung, phường Hàng Trống, quận Hoàn Kiếm</p>
+                            </div>
+                            <p>Nếu Sài Gòn nổi tiếng với Nhà thờ Đức Bà cổ kính thì Hà Nội cũng vang danh cùng Nhà thờ Lớn hàng trăm năm tuổi. Đến với nơi đây, du khách sẽ được chiêm ngưỡng một công trình kiến trúc Gothic trung cổ Châu Âu đặc trưng, tìm hiểu lịch sử hình thành và phát triển của nhà thờ.</p>
+                            <p>Không chỉ là nơi sinh hoạt tín ngưỡng dành cho Giáo dân, Nhà thờ Lớn Hà Nội còn là điểm tham quan, du lịch, check – in cực hot dành cho giới trẻ.</p>
+                            <p>Nhà thờ Lớn được mệnh danh là nhà thờ có thiết kế kiến trúc đẹp nhất tại Hà Nội. Nhà thờ được xây dựng từ thời Pháp thuộc, là công trình tiêu biểu cho phong cách Gothic Châu Âu, mô phỏng theo kiến trúc nhà thờ Đức Bà Paris. Chiều rộng 21 m, chiều dài 65 m, có 2 tháp chuông cao gần 32 m và được cố định bằng những trụ đá lớn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-7">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/hanoi-chua-mot-cot.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>CHÙA MỘT CỘT</h2>
+                                <p>Phố Chùa Một Cột, phường Đội Cấn, quận Ba Đình</p>
+                            </div>
+                            <p>
+                                Chùa Một Cột được xây dựng năm 1049 dưới triều đại nhà Lý, là một trong những biểu tượng của thủ đô Hà Nội bên cạnh tháp Rùa và Khuê Văn Các. Bên cạnh ý nghĩa về tâm linh thì chùa Một Cột là công trình kiến trúc độc đáo có tính thẩm mỹ cao, được thể hiện qua nghệ thuật tạo hình trên mặt nước, điêu khắc, hội họa… phản ánh giá trị văn hóa cổ xưa cũng như mang đậm tính dân tộc. Chuyến du lịch Hà Nội bạn sẽ thêm phần thú vị nếu ghét thăm ngôi chủa nổi tiếng này đấy!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-8">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/hanoi-hoang-thanh.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>HOÀNG THÀNH THĂNG LONG</h2>
+                                <p>19C Hoàng Diệu, phường Điện Biên, quận Ba Đình</p>
+                            </div>
+                            <p>
+                                Hoàng thành Thăng Long là quần thể di tích gắn liền với sự phát triển của Thăng Long – Hà Nội, được các triều vua xây dựng trong nhiều giai đoạn lịch sử.
+                            </p>
+                            <p>
+                                Đây cũng là di tích quan trọng bậc nhất trong hệ thống các di tích lịch sử của Việt Nam. Đến Hoàng thành Thăng Long du khách có thể tham quan những địa điểm nổi bật như khu khảo cổ học số 18 Hoàng Diệu, Đoan Môn, Điện Kính Thiên, Bắc Môn (thành Cửa Bắc)…
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-9">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Landscapes/hanoi-hoa-lo.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>NHÀ TÙ HỎA LÒ</h2>
+                                <p>Phố Hỏa Lò, phường Trần Hưng Đạo, quận Hoàn Kiếm</p>
+                            </div>
+                            <p>
+                                Nhà tù Hỏa Lò được thực dân Pháp xây dựng từ năm 1896 với tên gọi “Maison Central”, là nơi giam giữ những chiến sĩ cách mạng chống lại chế độ thực dân. Đây là một trong những công trình kiên cố vào loại bậc nhất Đông Dương khi đó. Sau ngày giải phóng thủ đô, nhà tù được đặt dưới quyền của chính quyền cách mạng. Từ năm 1963 đến 1975, nơi đây còn được sử dụng để làm nơi giam giữ những phi công Mỹ bị quân đội Việt Nam bắn rơi trong cuộc chiến tranh phá hoại miền Bắc.
+                            </p>
+                            <p>
+                                Ngày nay nhà tù Hỏa Lò trở thành di tích lịch sử đặc biệt với nhiều tư liệu quý giá được trưng bày và giữ gìn cẩn thận, thu hút hàng ngàn du khách trong và ngoài nước tới tham quan mỗi năm.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+        <div class="foods tab-content" id="tab-content-2">
+            <div class="item #2" id="item-1">
+                <div class="image">
+                    <img src="img/Foods/hanoi-cafe-trung.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Cà phê trứng</p>
+                </div>
+            </div>
+            <div class="item #2" id="item-2">
+                <div class="image">
+                    <img src="img/Foods/hanoi-banh-mi.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Bánh mì đường phố</p>
+                </div>
+            </div>
+            <div class="item #2" id="item-3">
+                <div class="image">
+                    <img src="img/Foods/com.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Cốm - thức quà mùa thu</p>
+                </div>
+            </div>
+            <div class="item #2" id="item-4">
+                <div class="image">
+                    <img src="img/Foods/hanoi-pho-cuon.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Phở bò</p>
+                </div>
+            </div>
+            <div class="item #2" id="item-5">
+                <div class="image">
+                    <img src="img/Foods/pho.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Phở cuốn ngũ xã</p>
+                </div>
+            </div><div class="item #2" id="item-6">
+                <div class="image">
+                    <img src="img/Foods/hanoi-chao-suon.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Cháo sườn</p>
+                </div>
+            </div>
+        </div>
+        <div class="more-2">
+            <div class="hightbox-content hightbox-content-1">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Foods/hanoi-cafe-trung.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>CÀ PHÊ TRỨNG</h2>
+                            </div>
+                            <p>Cà phê trứng là thức uống rất được yêu thích tại Hà Nội, đặc biệt trong những ngày thủ đô vào đông. Theo kinh nghiệm du lịch Hà Nội, đến thủ đô bạn nhất định phải tới thưởng thức những tách cà phê nóng tại những quán sau đây nhé:</p>
+                            <p><strong>1. Cafe Giảng</strong>
+                                <br>Địa chỉ: 39 Nguyễn Hữu Huân, Lý Thái Tổ, quận Hoàn Kiếm</p>
+                            <p><strong>2. Cafe Đinh</strong>
+                                <br>Địa chỉ: 13 Đinh Tiên Hoàn, phường Hàng Trống, quận Hoàn Kiếm
+                            </p>
+                            <p><strong>3. Cafe phố cổ</strong>
+                                <br>Địa chỉ: 11 Hàng Gai, phường Hàng Trống, quận Hoàn Kiếm
+                            </p>
+                            <p><strong>4. Loading T cafe</strong>
+                                <br>Địa chỉ: Tầng 2, số 8 Chân Cầm, phường Hàng Trống, quận Hoàn Kiếm
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-2">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Foods/hanoi-banh-mi.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2> BÁNH MÌ</h2>
+                            </div>
+                            <p>Bánh mì Việt Nam từ một món ăn bình dân đã vươn tầm thế giới và trở thành một trong những món ngon đặc trưng của người Việt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-3">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Foods/com.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>CỐM – THỨC QUÀ CỦA MÙA THU</h2>
+                            </div>
+                            <p>Cốm là món ăn đặc sản của vùng đất Bắc Bộ, nhất là tại khu vực Hà Nội. Ngoài ra, cốm còn có mặt ở cả miền Trung và miền Nam, mỗi nơi đều cách chế biến và hương vị đặc trưng riêng. Nổi tiếng nhất là Cốm làng Vòng. Đây là loại cốm làm bởi người dân ở làng Vòng – một ngôi làng lâu đời, thuộc thôn Hậu, xã Dịch Vong, huyện Nam Từ Liêm (nay thuộc quận Cầu Giấy, Hà Nội).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-4">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Foods/pho.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>PHỞ</h2>
+                            </div>
+                            <p>Đây là một món ăn có hương bị dành riêng đặc trưng cho mảnh đất Hà Nội.</p>
+                            <p>Phở Hà Nội rất đa dạng, bao gồm từ phở bò, phở gà, phở áp chảo cho đến phở cuốn. Mỗi loại phở sẽ có những hương vị và nét đặc trưng riêng. Nhiều người vẫn thường ví von rằng, đã du lịch điểm đến Hà Nội mà chưa nếm thử bát phở thì coi như chưa đặt chân đến nơi này bởi đây chính là một món ăn ẩm thực đặc trưng tại Hà Nội.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-5">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Foods/hanoi-pho-cuon.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>PHỞ CUỐN NGŨ XÃ</h2>
+                            </div>
+                            <p>Ngũ Xá từ trước đến nay vẫn chưa từng phai nhòa trong tâm trí người Hà Nội mỗi lần nhắc đến phở cuốn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-6">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Foods/hanoi-chao-suon.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>CHÁO SƯỜN NGÕ HUYỆN</h2>
+                            </div>
+                            <p>Ngoài xôi, bánh mì hay bún phở, món cháo sườn giản dị cũng là món ăn sáng ưa thích của người dân Hà Thành. Với hương vị đặc trưng, sánh ngậy đầy hấp dẫn, cháo sườn buổi sáng còn hút khách bởi đây là món ăn phù hợp cho mọi lứa tuổi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="actives tab-content" id="tab-content-3">
+            <div class="item #3" id="item-1">
+                <div class="image">
+                    <img src="img/Actives/hanoi-dao-bo-ho.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Dạo quanh bờ hồ Hoàn Kiếm</p>
+                </div>
+            </div>
+            <div class="item #3" id="item-2">
+                <div class="image">
+                    <img src="img/Actives/hanoi-city-tour.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Xe buýt 2 tầng - HaNoi City Tour</p>
+                </div>
+            </div>
+            <div class="item #3" id="item-3">
+                <div class="image">
+                    <img src="img/Actives/le-thuong-co-lang-bac.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Ngắm lễ thượng cờ và hạ cờ tại Quảng trường Ba Đình</p>
+                </div>
+            </div>
+            <div class="item #3" id="item-4">
+                <div class="image">
+                    <img src="img/Actives/hanoi-cafe-duong-tau.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Cafe đường tàu</p>
+                </div>
+            </div>
+        </div>
+        <div class="more-3">
+            <div class="hightbox-content hightbox-content-1">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Actives/hanoi-dao-bo-ho.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Dạo quanh bờ hồ Hoàn Kiếm</h2>
+                            </div>
+                            <p>Là một vẻ đẹp tuyệt vời ở khu vực phố cổ, Hồ Hoàn Kiếm cắt ngang ba con phố đó chính là Lê Thái Tổ – Hàng Khay – Đinh Tiên Hoàng.</p>
+                            <p>Đây là một điểm hẹn lý tưởng cho du khách khi đi du lịch Hà Nội ở bất cứ mùa nào trong năm, một hồ nước xinh đẹp, quyến rũ với tầm nhìn lý tưởng. Hãy đến đây để thoát khỏi sự hối hả và nhộn nhịp của thành phố, đặc biệt là vào cuối tuần, khi các con phố bị chặn xe hơi và chỉ dành cho người đi bộ. Đến với hồ Hoàn Kiếm, bạn sẽ cảm nhận được cảm giác thư giãn khi tản bộ trên bờ hồ, ngắm nhìn những gợn sóng mơn man nhẹ nhàng và rất bình yên.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-2">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Actives/hanoi-city-tour.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Xe buýt 2 tầng</h2>
+                                <p></p>
+                            </div>
+                            <p>Với lộ trình linh động trong nhiều khung giờ khác nhau, bạn có thể thoải mái chủ động sắp xếp lịch trình của mình để khám phá Hà Nội về đêm. Với chiếc vé xe buýt này, bạn sẽ có ngay 1 chuyến đi thú vị cùng bạn bè, người thân hay người thương rồi đấy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-3">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Actives/le-thuong-co-lang-bac.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>CHIÊM NGƯỠNG LỄ THƯỢNG CỜ VÀ HẠ CỜ TẠI QUẢNG TRƯỜNG BA ĐÌNH</h2>
+                            </div>
+                            <p>Không kể trời nắng nóng hay mưa rét, mỗi ngày, lễ Thượng cờ đều được thực hiện trọng thể trước Lăng Bác vào sáng sớm và lễ Hạ cờ được tiến hành vào buổi tối.</p>
+                            <p>Vào đúng 6 giờ sáng (mùa Hè) và 6h30 sáng (mùa Đông), đoàn thực hiện nghi lễ Thượng cờ khởi hành từ phía sau Lăng Bác.</p>
+                            <p>Tương tự, nghi lễ Hạ cờ cũng sẽ được đội tiêu binh thực hiện vào lúc 21 giờ tối hàng ngày, lễ Hạ cờ được thực hiện với nghi thức tương tự như lễ Thượng cờ.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-4">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Actives/hanoi-cafe-duong-tau.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>TRẢI NGHIỆM CAFE ĐƯỜNG TÀU</h2>
+                            </div>
+                            <p>Nhâm nhi ly cafe bên cạnh đường tàu chắc chắn sẽ lại một trải nghiệm thú vị khi ghé thăm Thủ đô.</p>
+                            <p>Đây là địa điểm thu hút rất nhiều du khách trong nước cũng như nước ngoài tới “check-in”. Tuy nhiên, hãy quan sát thật kỹ và đảm bảo an toàn đường sắt nếu bạn tận hưởng không gian tại đây nhé</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="transit tab-content" id="tab-content-4">
+            <div class="item #4" id="item-1">
+                <div class="image">
+                    <img src="img/Transit/may-bay.webp" alt="">
+                </div>
+                <div class="info">
+                    <p>Taxi</p>
+                </div>
+            </div>
+            <div class="item #4" id="item-2">
+                <div class="image">
+                    <img src="img/Transit/tau_hoa.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Xe buýt</p>
+                </div>
+            </div>
+            <div class="item #4" id="item-3">
+                <div class="image">
+                    <img src="img/Transit/o-to.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Xe đạp</p>
+                </div>
+            </div>
+            <div class="item #4" id="item-4">
+                <div class="image">
+                    <img src="img/Ha-Noi.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>DI CHUYỂN TRONG NỘI THÀNH</p>
+                </div>
+            </div>
+        </div>
+        <div class="more-4">
+            <div class="hightbox-content hightbox-content-1">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Transit/may-bay.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Máy bay</h2>
+                            </div>
+                            <p>Sân bay Nội Bài đạt chuẩn quốc tế có diện tích siêu rộng, khai thác các đường bay thẳng từ các tỉnh thành trong nước hoặc từ những chuyến bay quốc tế của nhiều quốc gia trên thế giới. Bạn có thể tìm bất kỳ chuyến bay đến Hà Nội của bất kỳ hãng máy bay nào, trong đó có hãng Bamboo Airways với nhiều đợt khuyến mãi đặc biệt trong năm để sẵn sàng phục vụ cho chuyến đi tới Hà Nội của bạn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-2">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Transit/tau_hoa.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Tàu hoả</h2>
+                            </div>
+                            <p>Đến với Hà Nội, bạn cũng có thể chọn phương tiện tàu hoả, với chuyến tàu Bắc – Nam mỗi ngày hàng chục chuyến từ khắp các tỉnh thành đổ về. Giá vé của phương tiện này cũng linh hoạt, tuỳ thuộc vào chất lượng ghế ngồi mà bạn lựa chọn. Tuy nhiên, đi bằng phương tiện này sẽ bất khá nhiều thời gian và có thể gây khó chịu vì công suất tàu hoạt động khá ồn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-3">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Transit/o-to.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>Ô tô</h2>
+                            </div>
+                            <p>Bạn cũng có thể đến với Hà Nội bằng phương tiện ô tô, xe ô tô có tự lái và dạng xe khách. Đường sá đi đến Hà Nội khá thuận lợi, với nhiều con đường cao tốc, cầu vượt được xây dựng lên đã giúp rút ngắn nhiều tuyến đường và giúp di chuyển đến Hà Nội dễ dàng hơn bao giờ hết.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hightbox-content hightbox-content-4">
+                <div>
+                    <a href="javascript:;" class="delete"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="image">
+                        <img src="img/Ha-Noi.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="describe">
+                            <div class="heading">
+                                <h2>DI CHUYỂN TRONG NỘI THÀNH</h2>
+                            </div>
+                            <p>Hà Nội là một thành phố nổi tiếng bởi sự đông đúc sầm uất, tuy nhiên nếu bạn là người lần đầu tiên đến Hà Nội thì rất dễ bị lạc đường. Theo kinh nghiệm du lịch Hà Nội của nhiều du khách, để dạo quanh thủ đô bạn có thể chọn những phương tiện sau để đi lại:</p>
+                            <p>– <strong>Xe bus</strong>: Nếu muốn tiết kiệm và an toàn mà có thể tự do khám phá Hà Nội thì bạn có thể đi bằng xe bus. Hiện nay tại thủ đô có hệ thống xe bus rộng khắp với trên 80 chuyến xe bus và hàng nghìn lượt chạy mỗi ngày. Giá vé của phương tiện công cộng này cũng rất rẻ chỉ từ 7.000- 10.000đ/lượt.</p>
+                            <p>– <strong>Xe đạp dạo phố</strong>: Hà Nội đông đúc nhưng vẫn có những con đường tuyệt đẹp mà du khách có thể thuê xe đạp dạo chơi ngắm nhìn những con phố, vẻ đẹp của Hà Nội hiện lên rõ nhất qua từng con phố, từng hàng cây, từng quán cóc vỉa hè. Du khách sẽ cảm nhận được hết vẻ đẹp tinh tế và nền văn hóa lâu đời của Thành phố khi dạo quanh trên chiếc xe đạp của mình.</p>
+                            <p>– <strong>Xe xích lô, xe điện</strong>: Nếu muốn thưởng ngoạn hết cảnh đẹp của Thành phố, ngắm nhìn vẻ đẹp Hồ Gươm, dạo chơi mua sắm ở chợ Đồng Xuân, chợ đêm phố cổ, dạo ngắm phố Nhà Thờ,…du khách có thể lựa chọn thuê xe xích lô. Bên cạnh đó nếu như đi đông thì thuê xe điện theo giờ sẽ là lựa chọn thích hợp với mức giá thành khá rẻ.</p>
+                            <p>– <strong>Xe máy</strong>: Nếu muốn tự do và chủ động trong việc đi lại, bạn có thể thuê xe máy tự lái với giá giao động từ 100.000đ đến 150.000đ/ngày. Ngoài ra, du khách cũng có thể lựa chọn những phương tiện khác như xe taxi hay xe ôm khi cần thiết hoặc đơn giản muốn ngắm nhìn thủ đô một cách thuận tiện nhất.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="experience">
+        <p>Kinh nghiệm du lịch Hà Nội</p>
+        <ul>
+            <li>– Mùa xuân (từ tháng 3 đến tháng 4) và mùa thu (từ tháng 4 đến tháng 8) là thời điểm lý tưởng để lên kế hoạch khám phá Hà Nội. Đây là lúc tiết trời đẹp nhất trong năm ở Hà Nội, với bầu trời xanh trong, gió heo may se se lạnh, lá vàng rơi, mùi hoa sữa thoảng nhẹ,… tạo nên khung cảnh lãng mạn, hoài cổ.</li>
+            <li>– Mang theo bản đồ khi dạo quanh phố cổ Hà Nội vì khu vực này đường rất ngắn nhưng do được quy hoạch thiết kế ô bàn cờ nên nếu không tinh ý du khách rất dễ bị lạc ở đây.</li>
+            <li>– Chú ý chiều đón xe bus vì đa số đường xa ở Hà Nội là đường hai chiều mà lộ trình xe bus chiều đi và về nhiều tuyến rất khác nhau.</li>
+            <li>– Khi đi các khu chợ ở Hà Nội mua sắm như chợ Đồng Xuân, chợ đêm Hàng Đào du khách lưu ý trả giá hợp lý và thỏa thuận trước với người bán hàng.</li>
+            <li>– Khi du lịch Hà Nội vào mùa đông du khách nên mang áo ấm vì thời tiết lúc này rất lạnh.</li>
+        </ul>
+    </div>
+    <div class="map">
+        <p>Bản đồ Hà Nội</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35687.064170557525!2d105.82342922216331!3d21.02653067848621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1692516928908!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="navigation">
+        <h1>Khám phá điểm đến khác</h1>
+        <nav>
+            <div class="nav-card">
+                <a href="/Phu_Quoc/index.html">
+                    <div class="image">
+                    <img src="/Phu_Quoc/img/PhuQuoc-1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>Phú Quốc</p>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-card">
+                <a href="/Nha_Trang/index.html">
+                    <div class="image">
+                        <img src="/Nha_Trang/Nha-trang.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>Nha Trang</p>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div id="rating-container">
+        <h1>Đánh giá điểm đến</h1>
+        <div class="rating-heading">
+            <div class="rating-overview-filter">
+                <div class="rating-filter" id="0-star">
+                    <span>Tất cả</span>
+                </div>
+                <div class="rating-filter" id="1-star">
+                    <span>1</span><i class="fa-solid fa-star"></i>
+                </div>
+                <div class="rating-filter" id="2-star">
+                    <span>2</span><i class="fa-solid fa-star"></i>
+                </div>
+                <div class="rating-filter" id="3-star">
+                    <span>3</span><i class="fa-solid fa-star"></i>
+                </div>
+                <div class="rating-filter" id="4-star">
+                    <span>4</span><i class="fa-solid fa-star"></i>
+                </div> 
+                <div class="rating-filter" id="5-star">
+                    <span>5</span><i class="fa-solid fa-star"></i>
+                </div>
+            </div>    
+        </div>
+        <div id="rating-list">
+            <div class="rating__list rating-list-1">
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="rating-content">
+                            <span>Có 1 vài điểm nói về địa điểm bị sai. Mong sớm sửa đổi!</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rating__list rating-list-2">
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>                            
+                        </div>
+                        <div class="rating-content">
+                            <span>Có 1 vài điểm nói về địa điểm bị sai. Mong sớm sửa đổi!</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rating__list rating-list-3">
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>                            
+                        </div>                        
+                        <div class="rating-content">
+                            <span>Khá ok!</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>                        
+                        <div class="rating-content">
+                            <span>Khá thích địa điểm này</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rating__list rating-list-4">
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="rating-content">
+                            <span>Tuyệt vời!</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rating__list rating-list-5">
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>                            
+                        </div>
+                        <div class="rating-content">
+                            <span>Recomment mọi người nên đến</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating-item">
+                    <div class="rating-avatar">
+                        <span><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="rating-main">
+                        <div class="rating-username">
+                            <span>User name</span>
+                        </div>
+                        <div class="rating-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>                            
+                        </div>
+                        <div class="rating-content">
+                            <span>Tuyệt vời</span>
+                        </div>
+                        <div class="rating-action">
+                            <div class="like"><i class="fa-solid fa-thumbs-up"></i>Hữu ích </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

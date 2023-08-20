@@ -1,5 +1,31 @@
 'use strict';
 
+// function loadProducts() {
+//   fetch("assets/js/destintion.json")
+//       .then(res => res.json())
+//       .then(data => {
+//           let html = "";
+//           for (let product of data) {
+//               html += `
+//                   <li class="gallery-item">
+//                       <figure class="gallery-image">
+//                           <img src="${product.image}" alt="Gallery image">
+//                       </figure>
+//                   </li>
+//               `;
+//           }
+//           let element = document.querySelector(".gallery-list");
+//           element.insertAdjacentHTML("afterend", html);
+//       });
+// }
+
+
+// window.onload = function() {
+//   loadProducts();
+// }
+
+
+
 /**
  * navbar toggle
  */

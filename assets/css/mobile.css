@@ -158,7 +158,7 @@ a,li{
 }
 /* Hightbox */
 .hightbox-content{
-    width: 90.05vw;
+    width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -167,7 +167,7 @@ a,li{
     background-color: rgba(159, 159, 159, 0.259);
 }
 .hightbox-content > div{
-    width: 70%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;

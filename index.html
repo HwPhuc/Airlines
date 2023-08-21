@@ -42,8 +42,7 @@
         <span><i class="ri-map-pin-line"></i></span>
         <div class="input__content">
           <div class="input__group">
-            <input type="text" />
-            <label>Điểm đến</label>
+            <input type="text" id="destination-input" name="booking-input" />
           </div>
           <p>Bạn muốn đến đâu?</p>
         </div>
@@ -52,8 +51,7 @@
         <span><i class="ri-user-3-line"></i></span>
         <div class="input__content">
           <div class="input__group">
-            <input type="number" />
-            <label>Hành khách</label>
+            <input type="number" id="passenger-input" name="booking-input" />
           </div>
           <p>Số lượng</p>
         </div>
@@ -62,7 +60,7 @@
         <span><i class="ri-calendar-line"></i></span>
         <div class="input__content">
           <div class="input__group">
-            <input type="date" />
+            <input type="date" id="departure-date-input" name="booking-input" />
           </div>
           <p>Ngày đi</p>
         </div>
@@ -71,19 +69,19 @@
         <span><i class="ri-calendar-line"></i></span>
         <div class="input__content">
           <div class="input__group">
-            <input type="date" />
+            <input type="date" id="return-date-input" name="booking-input" />
           </div>
           <p>Ngày về</p>
         </div>
       </div>
-      <button class="btn"><i class="ri-search-line"></i></button>
+      <button class="btn" onclick="checkForm(event)"><i class="ri-search-line"></i></button>
     </form>
   </section>
 
   <section class="section__container plan__container" id="plan__container">
     <p class="subheader">HỖ TRỢ</p>
     <h2 class="section__header">
-      LÊN KẾ HOẠCH DU LỊCH CHO BẠN GIÚP BẠN TỰ TIN
+      LÊN KẾ HOẠCH DU LỊCH GIÚP BẠN
     </h2>
     <p class="description">
       Chúng tôi sẽ hỗ trợ bạn đặt chỗ và lên kế hoạch cho chuyến du lịch của bạn,
@@ -122,7 +120,7 @@
     <div class="section__container memories__container">
       <div class="memories__header">
         <h2 class="section__header">
-          Du lịch để tạo nên những kỷ niệm đẹp
+          Du lịch để có những kỷ niệm đẹp
         </h2>
         <button class="view__all">
           <a href="#view__all">Bắt đầu</a>
@@ -224,14 +222,6 @@
           <p>Vietnam</p>
         </div>
       </div>
-      <div class="travellers__card" onclick="redirect()">
-        <img src="assets/traveller-4.jpg" alt="traveller" />
-        <div class="travellers__card__content">
-          <!-- <img src="assets/client-4.jpg" alt="client" /> -->
-          <h4>Daniel Taylor</h4>
-          <p>Malaysia</p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -284,19 +274,13 @@
         <p>Mạng xã hội</p>
       </div>
     </div>
-    <!-- <div class="section__container footer__bar">
-      <p>Copyright © 2023 Hoang Phuc Le.</p>
-      <div class="socials">
-        <span><i class="ri-facebook-fill"></i></span>
-        <span><i class="ri-twitter-fill"></i></span>
-        <span><i class="ri-instagram-line"></i></span>
-        <span><i class="ri-youtube-fill"></i></span>
-      </div>
-    </div> -->
   </footer>
 
   <button id="scrollToTopBtn" title="Trượt lên đầu trang">&#8593;</button>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 

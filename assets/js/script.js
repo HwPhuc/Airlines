@@ -66,3 +66,26 @@ function changeBackground(selectedOption) {
 function redirect(page) {
     window.location.href = page;
 }
+
+function checkForm(event) {
+    event.preventDefault(); // Ngăn chặn hành vi mặc định của nút submit
+
+    var inputElements = document.querySelectorAll(".booking__container input");
+    var allInputsFilled = true;
+
+    inputElements.forEach(function (inputElement) {
+        if (!inputElement.value) {
+            inputElement.classList.add("blink-animation");
+            allInputsFilled = false;
+
+            setTimeout(function () {
+                inputElement.classList.remove("blink-animation");
+            }, 2000);
+        }
+    });
+
+    if (allInputsFilled) {
+        // Chuyển hướng đến trang HTML khác
+        window.location.href = "ticket.html";
+    }
+}

@@ -141,7 +141,6 @@ nav.sticky {
 .booking__option {
     background-color: var(--extra-light);
     color: var(--text-dark);
-    /* Thêm các thuộc tính CSS khác cho ô */
 }
 
 .booking__option.active {
@@ -167,11 +166,6 @@ nav.sticky {
     border-radius: 5px;
     cursor: pointer;
 }
-
-/* .booking__nav span:nth-child(2) {
-    color: var(--white);
-    background-color: var(--primary-color);
-} */
 
 .booking__container form {
     margin-top: 4rem;
@@ -239,6 +233,23 @@ nav.sticky {
 .booking__container .btn {
     padding: 1rem;
     font-size: 1.5rem;
+    background-color: var(--primary-color);
+}
+
+@keyframes blink {
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: red;
+    }
+    100% {
+        border-color: transparent;
+    }
+}
+
+.blink-animation {
+    animation: blink 0.5s 3;
 }
 
 .plan__container .subheader {
@@ -338,9 +349,9 @@ nav.sticky {
     gap: 2rem;
 }
 
-.memories__header .section__header {
+/* .memories__header .section__header {
     max-width: 600px;
-}
+} */
 
 .memories__header .view__all {
     padding: 1rem 2rem;
@@ -450,7 +461,7 @@ nav.sticky {
 .travellers__grid {
     margin-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
@@ -559,31 +570,6 @@ nav.sticky {
 .footer__col p:hover {
     color: var(--white);
 }
-
-/* .footer__bar {
-    padding: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    border-top: 1px solid var(--extra-light);
-}
-
-.footer__bar p {
-    font-size: 0.9rem;
-    color: var(--extra-light);
-}
-
-.socials {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.socials span {
-    font-size: 1.2rem;
-    color: var(--extra-light);
-} */
 
 #scrollToTopBtn {
     display: none;

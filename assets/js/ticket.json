@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Singapore Airlines",
+        "details": "Singapore (SIN) - London (LHR)",
+        "price": "$900"
+    },
+    {
+        "name": "Qatar Airways",
+        "details": "Doha (DOH) - Sydney (SYD)",
+        "price": "$1200"
+    },
+    {
+        "name": "Lufthansa",
+        "details": "Frankfurt (FRA) - Tokyo (NRT)",
+        "price": "$1000"
+    },
+    {
+        "name": "British Airways",
+        "details": "London (LHR) - New York (JFK)",
+        "price": "$700"
+    },
+    {
+        "name": "Cathay Pacific",
+        "details": "Hong Kong (HKG) - Los Angeles (LAX)",
+        "price": "$900"
+    },
+    {
+        "name": "Delta Air Lines",
+        "details": "Atlanta (ATL) - Paris (CDG)",
+        "price": "$950"
+    },
+    {
+        "name": "Air France",
+        "details": "Paris (CDG) - Rome (FCO)",
+        "price": "$550"
+    },
+    {
+        "name": "KLM Royal Dutch Airlines",
+        "details": "Amsterdam (AMS) - Beijing (PEK)",
+        "price": "$950"
+    },
+    {
+        "name": "Turkish Airlines",
+        "details": "Istanbul (IST) - Dubai (DXB)",
+        "price": "$600"
+    },
+    {
+        "name": "American Airlines",
+        "details": "New York (JFK) - Los Angeles (LAX)",
+        "price": "$400"
+    }
+]

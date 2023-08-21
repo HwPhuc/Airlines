@@ -2,806 +2,302 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tourly - Travel agancy</title>
-
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <title>
+    Open Airlines
+  </title>
 </head>
 
-<body id="top">
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-
-    <div class="overlay" data-overlay></div>
-
-    <div class="header-top">
-      <div class="container">
-
-        <a href="tel:+01123456790" class="helpline-box">
-
-          <div class="icon-box">
-            <ion-icon name="call-outline"></ion-icon>
-          </div>
-
-          <div class="wrapper">
-            <p class="helpline-title">Giải đáp thắc mắc:</p>
-
-            <p class="helpline-number">+84 (123) 4567 90</p>
-          </div>
-
-        </a>
-
-        <!-- <a href="#" class="logo">
-          <img src="./assets/images/logo.svg" alt="Tourly logo">
-        </a> -->
-
-        <a href="#" class="logo">
-          <span class="logo-text">Open Airlines</span>
-        </a>
-
-        <div class="header-btn-group">
-
-          <button class="search-btn" aria-label="Search">
-            <ion-icon name="search"></ion-icon>
-          </button>
-
-          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-            <ion-icon name="menu-outline"></ion-icon>
-          </button>
-
-        </div>
-
-      </div>
-    </div>
-
-    <div class="header-bottom">
-      <div class="container">
-
-        <ul class="social-list">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-        <nav class="navbar" data-navbar>
-
-          <div class="navbar-top">
-
-            <!-- <a href="#" class="logo">
-              <img src="./assets/images/logo-blue.svg" alt="Tourly logo">
-            </a> -->
-
-            <a href="#" class="logo">
-              <span class="logo-text">Open Airlines</span>
-            </a>
-
-            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </div>
-
-          <ul class="navbar-list">
-
-            <li>
-              <a href="#home" class="navbar-link" data-nav-link>Trang chủ</a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link" data-nav-link>về chúng tôi</a>
-            </li>
-
-            <li>
-              <a href="#destination" class="navbar-link" data-nav-link>Điểm đến</a>
-            </li>
-
-            <li>
-              <a href="#package" class="navbar-link" data-nav-link>Gói có sẵn</a>
-            </li>
-
-            <li>
-              <a href="#gallery" class="navbar-link" data-nav-link>Phòng trưng bày</a>
-            </li>
-
-            <li>
-              <a href="#contact" class="navbar-link" data-nav-link>Liên hệ chúng tôi</a>
-            </li>
-
-          </ul>
-
-        </nav>
-
-        <button class="btn btn-primary"><a href="./sign-in.html">Đăng ký</a></button>
-
-      </div>
-    </div>
-
+<body id="header__container">
+  <nav>
+    <div class="nav__logo">OPEN AIRLINES</div>
+    <ul class="nav__links">
+      <li class="link"><a href="#header__container">Trang chủ</a></li>
+      <li class="link"><a href="#plan__container">Giới thiệu</a></li>
+      <li class="link"><a href="#memories__container">Ưu đãi</a></li>
+      <li class="link"><a href="#lounge__container">Ghế ngồi</a></li>
+      <li class="link"><a href="#travellers-grid">Điểm đến</a></li>
+    </ul>
+    <button class="btn">
+      <a href="#contact">Liên hệ</a>
+    </button>
+  </nav>
+  <header class="section__container header__container">
+    <h1 class="section__header" id="section__header">Cất cánh cùng chúng tôi</h1>
+    <img src="assets/header.jpg" alt="header" />
   </header>
 
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="hero" id="home">
-        <div class="container">
-
-          <h2 class="h1 hero-title">Sải cánh cùng chúng tôi</h2>
-
-          <p class="hero-text">
-            Open Airlines - Đối tác đáng tin cậy, mang đến trải nghiệm du lịch chất lượng và kết nối các thành phố trên toàn cầu.
-          </p>
-
-          <div class="btn-group">
-            <button class="btn btn-primary">Tìm hiểu thêm</button>
-
-            <button class="btn btn-secondary">Đặt ngay</button>
+  <section class="section__container booking__container" id="view__all">
+    <div class="booking__nav">
+      <span class="booking__option active" onclick="changeBackground(this)">Phổ thông</span>
+      <span class="booking__option" onclick="changeBackground(this)">Thương gia</span>
+      <span class="booking__option" onclick="changeBackground(this)">Hạng nhất</span>
+    </div>
+    <form>
+      <div class="form__group">
+        <span><i class="ri-map-pin-line"></i></span>
+        <div class="input__content">
+          <div class="input__group">
+            <input type="text" />
+            <label>Điểm đến</label>
           </div>
-
+          <p>Bạn muốn đến đâu?</p>
         </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #TOUR SEARCH
-      -->
-
-      <section class="tour-search">
-        <div class="container">
-
-          <form action="" class="tour-search-form">
-
-            <div class="input-wrapper">
-              <label for="destination" class="input-label">Tìm kiếm Điểm đến*</label>
-
-              <input type="text" name="destination" id="destination" required placeholder="Nhập điểm đến"
-                class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="people" class="input-label">Số Pax*</label>
-
-              <input type="number" name="people" id="people" required placeholder="Số người" class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="checkin" class="input-label">Ngày nhận phòng**</label>
-
-              <input type="date" name="checkin" id="checkin" required class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="checkout" class="input-label">Ngày trả phòng**</label>
-
-              <input type="date" name="checkout" id="checkout" required class="input-field">
-            </div>
-
-            <button type="submit" class="btn btn-secondary">Xác nhận</button>
-
-          </form>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #POPULAR
-      -->
-
-      <section class="popular" id="destination">
-        <div class="container">
-
-          <p class="section-subtitle">Khám phá địa điểm</p>
-
-          <h2 class="h2 section-title">Điểm đến phổ biến</h2>
-
-          <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
-          </p>
-
-          <ul class="popular-list">
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-img">
-                  <img src="./assets/images/popular-1.jpg" alt="San miguel, italy" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Italy</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">San miguel</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-img">
-                  <img src="./assets/images/popular-2.jpg" alt="Burj khalifa, dubai" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Dubai</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Burj khalifa</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-img">
-                  <img src="./assets/images/popular-3.jpg" alt="Kyoto temple, japan" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Japan</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Kyoto temple</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <button class="btn btn-primary">More destintion</button>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #PACKAGE
-      -->
-
-      <section class="package" id="package">
-        <div class="container">
-
-          <p class="section-subtitle">Popular Packeges</p>
-
-          <h2 class="h2 section-title">Checkout Our Packeges</h2>
-
-          <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
-          </p>
-
-          <ul class="package-list">
-
-            <li>
-              <div class="package-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-1.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Experience The Great Holiday On Beach</h3>
-
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(25 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                  </div>
-
-                  <p class="price">
-                    $750
-                    <span>/ per person</span>
-                  </p>
-
-                  <button class="btn btn-secondary">Book Now</button>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="package-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-2.jpg" alt="Summer Holiday To The Oxolotan River" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Summer Holiday To The Oxolotan River</h3>
-
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(20 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                  </div>
-
-                  <p class="price">
-                    $520
-                    <span>/ per person</span>
-                  </p>
-
-                  <button class="btn btn-secondary">Book Now</button>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="package-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-3.jpg" alt="Santorini Island's Weekend Vacation" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Santorini Island's Weekend Vacation</h3>
-
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(40 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                  </div>
-
-                  <p class="price">
-                    $660
-                    <span>/ per person</span>
-                  </p>
-
-                  <button class="btn btn-secondary">Book Now</button>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <button class="btn btn-primary">View All Packages</button>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #GALLERY
-      -->
-
-      <section class="gallery" id="gallery">
-        <div class="container">
-
-          <p class="section-subtitle">Photo Gallery</p>
-
-          <h2 class="h2 section-title">Photo's From Travellers</h2>
-
-          <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
-          </p>
-
-          <ul class="gallery-list">
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-1.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-2.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-3.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-4.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-5.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #CTA
-      -->
-
-      <section class="cta" id="contact">
-        <div class="container">
-
-          <div class="cta-content">
-            <p class="section-subtitle">Call To Action</p>
-
-            <h2 class="h2 section-title">Ready For Unforgatable Travel. Remember Us!</h2>
-
-            <p class="section-text">
-              Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque
-              laudantium. Sit ornare
-              mollitia tenetur, aptent.
-            </p>
+      </div>
+      <div class="form__group">
+        <span><i class="ri-user-3-line"></i></span>
+        <div class="input__content">
+          <div class="input__group">
+            <input type="number" />
+            <label>Hành khách</label>
           </div>
-
-          <button class="btn btn-secondary">Contact Us !</button>
-
+          <p>Số lượng</p>
         </div>
-      </section>
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-
-    <div class="footer-top">
-      <div class="container">
-
-        <div class="footer-brand">
-
-          <!-- <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" alt="Tourly logo">
-          </a> -->
-
-          <a href="#" class="logo">
-            <span class="logo-text">Open Airlines</span>
-          </a>
-
-          <p class="footer-text">
-            Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia
-            at
-            perferendis, pretium, aenean aut ultrices.
-          </p>
-
+      </div>
+      <div class="form__group">
+        <span><i class="ri-calendar-line"></i></span>
+        <div class="input__content">
+          <div class="input__group">
+            <input type="date" />
+          </div>
+          <p>Ngày đi</p>
         </div>
-
-        <div class="footer-contact">
-
-          <h4 class="contact-title">Contact Us</h4>
-
-          <p class="contact-text">
-            Feel free to contact and reach us !!
-          </p>
-
-          <ul>
-            <li class="contact-item">
-              <ion-icon name="call-outline"></ion-icon>
-
-              <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
-            </li>
-
-            <li class="contact-item">
-              <ion-icon name="mail-outline"></ion-icon>
-
-              <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
-            </li>
-
-            <li class="contact-item">
-              <ion-icon name="location-outline"></ion-icon>
-
-              <address>3146 Koontz, California</address>
-            </li>
-          </ul>
-
+      </div>
+      <div class="form__group">
+        <span><i class="ri-calendar-line"></i></span>
+        <div class="input__content">
+          <div class="input__group">
+            <input type="date" />
+          </div>
+          <p>Ngày về</p>
         </div>
+      </div>
+      <button class="btn"><i class="ri-search-line"></i></button>
+    </form>
+  </section>
 
-        <div class="footer-form">
-
-          <p class="form-text">
-            Subscribe our newsletter for more update & news !!
-          </p>
-
-          <form action="" class="form-wrapper">
-            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
-
-            <button type="submit" class="btn btn-secondary">Subscribe</button>
-          </form>
-
-        </div>
-
+  <section class="section__container plan__container" id="plan__container">
+    <p class="subheader">HỖ TRỢ</p>
+    <h2 class="section__header">
+      LÊN KẾ HOẠCH DU LỊCH CHO BẠN GIÚP BẠN TỰ TIN
+    </h2>
+    <p class="description">
+      Chúng tôi sẽ hỗ trợ bạn đặt chỗ và lên kế hoạch cho chuyến du lịch của bạn,
+      đồng thời chuẩn bị trước cho các sự cố có thể xảy ra.
+    </p>
+    <div class="plan__grid">
+      <div class="plan__content">
+        <span class="number">01</span>
+        <h4>Chất lượng kỹ thuật và bảo dưỡng</h4>
+        <p>
+          Máy bay luôn được bảo dưỡng đúng quy trình
+          và tuân thủ tiêu chuẩn an toàn cao nhất.
+        </p>
+        <span class="number">02</span>
+        <h4>Đào tạo và nghiệp vụ</h4>
+        <p>
+          Phi hành đoàn và nhân viên kỹ thuật được đào tạo
+          chuyên nghiệp để đảm bảo an toàn cho hành khách.
+        </p>
+        <span class="number">03</span>
+        <h4>Tiêu chuẩn an toàn hàng không quốc tế</h4>
+        <p>
+          Đáp ứng các quy định an toàn hàng không quốc tế
+          để đảm bảo an toàn tuyệt đối cho hành khách.
+        </p>
+      </div>
+      <div class="plan__image">
+        <img src="assets/plan-1.jpg" alt="plan" />
+        <img src="assets/plan-2.jpg" alt="plan" />
+        <img src="assets/plan-3.jpg" alt="plan" />
       </div>
     </div>
+  </section>
 
-  <!-- 
-    - #GO TO TOP
-  -->
+  <section class="memories" id="memories__container">
+    <div class="section__container memories__container">
+      <div class="memories__header">
+        <h2 class="section__header">
+          Du lịch để tạo nên những kỷ niệm đẹp
+        </h2>
+        <button class="view__all">
+          <a href="#view__all">Bắt đầu</a>
+        </button>
+      </div>
+      <div class="memories__grid">
+        <div class="memories__card">
+          <span><i class="ri-calendar-2-line"></i></span>
+          <h4>Đặt phòng & thư giãn</h4>
+          <p>
+            Bạn có thể thoải mái thư giãn và tận hưởng chuyến đi của mình
+            trong khi chúng tôi lo liệu về mọi thứ khác.
+          </p>
+        </div>
+        <div class="memories__card">
+          <span><i class="ri-shield-check-line"></i></span>
+          <h4>Kiểm tra thông minh</h4>
+          <p>
+            Công cụ mới, tiện lợi và tiết kiệm thời gian,
+            giúp bạn chuẩn bị tốt hơn cho chuyến đi của mình.
+          </p>
+        </div>
+        <div class="memories__card">
+          <span><i class="ri-bookmark-2-line"></i></span>
+          <h4>Tiết kiệm hơn</h4>
+          <p>
+            Với giá vé chiết khấu và các chương trình khuyến mãi
+            giúp mang đến mức giá tốt.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <a href="#top" class="go-top" data-go-top>
-    <ion-icon name="chevron-up-outline"></ion-icon>
-  </a>
+  <section class="section__container lounge__container" id="lounge__container">
+    <div class="lounge__image">
+      <img src="assets/lounge-1.jpg" alt="lounge" />
+      <img src="assets/lounge-2.jpg" alt="lounge" />
+    </div>
+    <div class="lounge__content">
+      <h2 class="section__header">Phòng chờ riêng tư</h2>
+      <div class="lounge__grid">
+        <div class="lounge__details">
+          <h4>Sự yên tĩnh</h4>
+          <p>
+            Open Airlines tạo không gian yên tĩnh, chỗ ngồi thoải mái và
+            dịch vụ chu đáo để bạn có trải nghiệm thư giãn hoàn hảo.
+          </p>
+        </div>
+        <div class="lounge__details">
+          <h4>Trải nghiệm</h4>
+          <p>
+            Phòng chờ độc quyền dành riêng cho du khách,
+            với tiện nghi cao cấp và không gian làm việc riêng tư.
+          </p>
+        </div>
+        <div class="lounge__details">
+          <h4>Sự chào đón</h4>
+          <p>
+            Thiên đường hoàn hảo cho gia đình, tạo không gian chào
+            đón thoải mái và vui vẻ trong thời gian chờ đợi.
+          </p>
+        </div>
+        <div class="lounge__details">
+          <h4>Ẩm thực</h4>
+          <p>
+            Với các món ăn quốc tế, đồ ăn ngon và đồ uống đặc biệt,
+            tạo nên trải nghiệm ẩm thực đáng nhớ.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="section__container travellers__container" id="travellers-grid">
+    <h2 class="section__header">Địa điểm du lịch hàng đầu</h2>
+    <div class="travellers__grid">
+      <div class="travellers__card" onclick="redirect('ha-noi.html')">
+        <img src="assets/traveller-1.jpg" alt="traveller" />
+        <div class="travellers__card__content">
+          <!-- <img src="assets/client-1.jpg" alt="client" /> -->
+          <h4>Hanoi</h4>
+          <p>Vietnam</p>
+        </div>
+      </div>
+      <div class="travellers__card" onclick="redirect('nha-trang.html')">
+        <img src="assets/traveller-2.jpg" alt="traveller" />
+        <div class="travellers__card__content">
+          <!-- <img src="assets/client-2.jpg" alt="client" /> -->
+          <h4>Nha Trang</h4>
+          <p>Vietnam</p>
+        </div>
+      </div>
+      <div class="travellers__card" onclick="redirect('phu-quoc.html')">
+        <img src="assets/traveller-3.jpg" alt="traveller" />
+        <div class="travellers__card__content">
+          <!-- <img src="assets/client-3.jpg" alt="client" /> -->
+          <h4>Phu Quoc</h4>
+          <p>Vietnam</p>
+        </div>
+      </div>
+      <div class="travellers__card" onclick="redirect()">
+        <img src="assets/traveller-4.jpg" alt="traveller" />
+        <div class="travellers__card__content">
+          <!-- <img src="assets/client-4.jpg" alt="client" /> -->
+          <h4>Daniel Taylor</h4>
+          <p>Malaysia</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- 
-    - custom js link
-  -->
+  <section class="subscribe">
+    <div class="section__container subscribe__container">
+      <h2 class="section__header">Theo dõi & nhận tin tức mới nhất</h2>
+      <form class="subscribe__form">
+        <input type="text" placeholder="Nhập địa chỉ email của bạn" />
+        <button class="btn">Đăng ký</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <h3>Open Airlines</h3>
+        <p>
+          Open Airlines - Nơi xuất phát cho sự xuất sắc. Chúng tôi cam kết tạo
+          sự hài lòng cho khách hàng và đam mê du lịch hàng không, đồng thời
+          mang đến dịch vụ đặc biệt và các chuyến bay liền mạch.
+        </p>
+        <p>
+          Với nụ cười thân thiện và máy bay hiện đại, chúng tôi kết nối thế giới và
+          mang đến trải nghiệm an toàn, thoải mái và khó quên.
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>THÔNG TIN</h4>
+        <p>
+          <a href="#header__container">Trang chủ</a>
+        </p>
+        <p>
+          <a href="#plan__container">Giới thiệu</a>
+        </p>
+        <p>
+          <a href="#memories__container">Ưu đãi</a>
+        </p>
+        <p>
+          <a href="#lounge__container">Ghế ngồi</a>
+        </p>
+        <p>
+          <a href="#travellers-grid">Điểm đến</a>
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>LIÊN HỆ</h4>
+        <p>Ủng hộ</p>
+        <p>Truyền thông</p>
+        <p>Mạng xã hội</p>
+      </div>
+    </div>
+    <!-- <div class="section__container footer__bar">
+      <p>Copyright © 2023 Hoang Phuc Le.</p>
+      <div class="socials">
+        <span><i class="ri-facebook-fill"></i></span>
+        <span><i class="ri-twitter-fill"></i></span>
+        <span><i class="ri-instagram-line"></i></span>
+        <span><i class="ri-youtube-fill"></i></span>
+      </div>
+    </div> -->
+  </footer>
+
+  <button id="scrollToTopBtn" title="Trượt lên đầu trang">&#8593;</button>
+
   <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>

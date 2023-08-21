@@ -47,7 +47,7 @@ a,li{
 /* Bảng thông tin điểm đến */
 .info-place{
     width: 300px;
-    height: 360px;
+    height: 400px;
     color: #51af43;
     text-align: justify;
     border: 1px #51af43 solid;
@@ -100,6 +100,8 @@ a,li{
 /* Tab - nav */
 .tabs-nav ul{
     display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 .tabs-nav{
     width: 100%;
@@ -110,6 +112,7 @@ a,li{
 .tabs-nav li{
     padding: 10px;
     margin-right: 5px;
+    border-bottom: 1px #c1c1c1 solid;
     border-radius: 10px 10px 0 0;
     text-transform: uppercase;
     font-weight: 600;
@@ -267,6 +270,7 @@ a,li{
     color: #eee;
     font-size: 2.5em;
     border-bottom: 2px #eee solid;
+    text-shadow: 4px 1px #ff0000;
 }
 /* RATE PLACE */
 #rating-container {

@@ -96,3 +96,18 @@ window.onload = function(){
    ShowTimeNow();
 }
 setInterval(ShowTimeNow, 1000);    //Gọi lại hàm sau mỗi giây
+
+window.addEventListener("offline", function(){
+    document.getElementById("lostInternet").style.display = "block";
+    // setTimeout(function(){
+    //     document.getElementById("lostInternet").style.display = "none";
+    // }, 5000);
+});
+window.addEventListener("online", function(){
+    document.getElementById("succesInternet").style.display = "block";
+    document.getElementById("lostInternet").style.display = "none";
+    // Sau 5 giây kết nối lại internet thông báo sẽ tự mất
+    setTimeout(function(){
+        document.getElementById("succesInternet").style.display = "none";
+    }, 5000);
+});

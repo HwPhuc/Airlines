@@ -8,6 +8,52 @@ html{
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+.container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 200px;
+    /* background-color: #000; */
+    filter: blur(3px) contrast(20);
+}
+.circle {
+    position: absolute;
+    width: 22%;
+    height: 41%;
+    border-radius: 50%;
+}
+
+.circle-1 {
+    animation: moveCircle-1 5s infinite alternate;
+    background-color: yellow;
+
+}
+
+.circle-2 {
+    animation: moveCircle-2 5s infinite alternate;
+    background-color: red;
+    
+}
+
+@keyframes moveCircle-1 {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+@keyframes moveCircle-2 {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
 /* Đặt class */
 .default{
     background-color: white;
@@ -26,7 +72,20 @@ a,li{
     text-shadow: 0px 0px 20px #000;
     color: blanchedalmond;
     font-size: 4rem;
+    display: inline-block;
+    position: absolute;
+    z-index: 999;
+    animation: scaleAnimation 5s ease-in-out infinite alternate;
+    /* animation: scaleAnimation 1s ease-in-out infinite alternate; */
 }
+@keyframes scaleAnimation {
+    0% {
+      transform: scale(0.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 h1 {
     animation: running 4s infinite;
 }
@@ -36,7 +95,6 @@ h1 {
     align-items: center;
     width: 100vw;
     height: 20rem;
-    background-image: url(img/PhuQuoc-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: hsla(0, 0%, 0%, 0.7);
@@ -50,12 +108,18 @@ h1 {
 }
 .heading-title {
     margin-top: 2em;
+    margin-bottom: 2em;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
+}
+@media (width < 800px) {
+    .heading-title {
+        grid-template-columns: auto;
+    }
 }
 .heading-title .text > p{
     font-size: 3.5em;
@@ -65,7 +129,7 @@ h1 {
 /* Bảng thông tin điểm đến */
 .info-place{
     width: 300px;
-    height: 360px;
+    height: 400px;
     color: #51af43;
     text-align: justify;
     border: 1px #51af43 solid;
@@ -158,6 +222,8 @@ h1 {
     height: 15em;
     margin-bottom: 1em;
     overflow: hidden;
+    border-radius: 10px 10px 0 0;
+
 }
 .image img{
     width: 100%;
@@ -248,7 +314,7 @@ h1 {
     border-radius: 15px;
 
 }
-.experience li{
+.experience li {
     margin-bottom: 10px;
 }
 .experience span {
@@ -311,6 +377,7 @@ h1 {
     color: #eee;
     font-size: 2.5em;
     border-bottom: 2px #eee solid;
+    text-shadow: 4px 1px #ff0000;
 }
 /* RATE PLACE */
 #rating-container {
@@ -405,4 +472,24 @@ h1 {
 .rating-item .rating-action .like {
     border-radius: 5px;
     border: 1px solid rgb(11, 116, 229);
+}
+.alert {
+    width: 25rem;
+    height: 3.5rem;
+    font-size: 20px;
+    font-weight: 500;
+    color: #eee;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    display: none;
+    bottom: 20px;
+    left: 10px;
+}
+#succesInternet {
+    background-color: #2ccc14;
+}
+#lostInternet {
+    background-color: #ff0000;
 }

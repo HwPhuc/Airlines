@@ -44,7 +44,6 @@ a,li{
 /* Bảng thông tin điểm đến */
 .info-place{
     width: 300px;
-    height: 400px;
     color: #51af43;
     text-align: justify;
     border: 1px #51af43 solid;

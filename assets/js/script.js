@@ -89,3 +89,24 @@ function checkForm(event) {
         window.location.href = "ticket.html";
     }
 }
+
+function hideSuggestions() {
+    var suggestionList = document.getElementById("suggestion-list");
+    suggestionList.style.display = "none";
+}
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav__links");
+const mobileNavLinks = document.querySelector(".mobile__nav__links");
+const mobileNavLinksItems = mobileNavLinks.querySelectorAll("li");
+
+menuToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+    mobileNavLinks.classList.toggle("active");
+});
+
+mobileNavLinksItems.forEach(function (item) {
+    item.addEventListener("click", function () {
+        mobileNavLinks.classList.toggle("active");
+    });
+});

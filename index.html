@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="./assets/images/index/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./assets/css/styles.css" />
   <title>
     Open Airlines
@@ -15,6 +15,13 @@
 <body id="header__container">
   <nav>
     <div class="nav__logo">OPEN AIRLINES</div>
+
+    <div class="menu-toggle">
+      <div class="toggle-bar"></div>
+      <div class="toggle-bar"></div>
+      <div class="toggle-bar"></div>
+    </div>
+
     <ul class="nav__links">
       <li class="link"><a href="#header__container">Trang chủ</a></li>
       <li class="link"><a href="#plan__container">Giới thiệu</a></li>
@@ -22,13 +29,22 @@
       <li class="link"><a href="#lounge__container">Ghế ngồi</a></li>
       <li class="link"><a href="#travellers-grid">Điểm đến</a></li>
     </ul>
+
+    <ul class="mobile__nav__links">
+      <li class="link"><a href="#header__container">Trang chủ</a></li>
+      <li class="link"><a href="#plan__container">Giới thiệu</a></li>
+      <li class="link"><a href="#memories__container">Ưu đãi</a></li>
+      <li class="link"><a href="#lounge__container">Ghế ngồi</a></li>
+      <li class="link"><a href="#travellers-grid">Điểm đến</a></li>
+    </ul>
+
     <button class="btn">
       <a href="#contact">Liên hệ</a>
     </button>
   </nav>
   <header class="section__container header__container">
     <h1 class="section__header" id="section__header">Cất cánh cùng chúng tôi</h1>
-    <img src="assets/header.jpg" alt="header" />
+    <img src="./assets/images/index/header.jpg" alt="header" />
   </header>
 
   <section class="section__container booking__container" id="view__all">
@@ -42,11 +58,12 @@
         <span><i class="ri-map-pin-line"></i></span>
         <div class="input__content">
           <div class="input__group">
-            <input type="text" id="destination-input" name="booking-input" />
+            <input type="search" id="destination-input" name="booking-input" />
           </div>
           <p>Bạn muốn đến đâu?</p>
         </div>
       </div>
+
       <div class="form__group">
         <span><i class="ri-user-3-line"></i></span>
         <div class="input__content">
@@ -56,6 +73,7 @@
           <p>Số lượng</p>
         </div>
       </div>
+
       <div class="form__group">
         <span><i class="ri-calendar-line"></i></span>
         <div class="input__content">
@@ -65,6 +83,7 @@
           <p>Ngày đi</p>
         </div>
       </div>
+
       <div class="form__group">
         <span><i class="ri-calendar-line"></i></span>
         <div class="input__content">
@@ -109,9 +128,9 @@
         </p>
       </div>
       <div class="plan__image">
-        <img src="assets/plan-1.jpg" alt="plan" />
-        <img src="assets/plan-2.jpg" alt="plan" />
-        <img src="assets/plan-3.jpg" alt="plan" />
+        <img src="./assets/images/index/plan-1.jpg" alt="plan" />
+        <img src="./assets/images/index/plan-2.jpg" alt="plan" />
+        <img src="./assets/images/index/plan-3.jpg" alt="plan" />
       </div>
     </div>
   </section>
@@ -157,8 +176,8 @@
 
   <section class="section__container lounge__container" id="lounge__container">
     <div class="lounge__image">
-      <img src="assets/lounge-1.jpg" alt="lounge" />
-      <img src="assets/lounge-2.jpg" alt="lounge" />
+      <img src="./assets/images/index/lounge-1.jpg" alt="lounge" />
+      <img src="./assets/images/index/lounge-2.jpg" alt="lounge" />
     </div>
     <div class="lounge__content">
       <h2 class="section__header">Phòng chờ riêng tư</h2>
@@ -199,25 +218,22 @@
     <h2 class="section__header">Địa điểm du lịch hàng đầu</h2>
     <div class="travellers__grid">
       <div class="travellers__card" onclick="redirect('ha-noi.html')">
-        <img src="assets/traveller-1.jpg" alt="traveller" />
+        <img src="./assets/images/index/traveller-1.jpg" alt="traveller" />
         <div class="travellers__card__content">
-          <!-- <img src="assets/client-1.jpg" alt="client" /> -->
           <h4>Hanoi</h4>
           <p>Vietnam</p>
         </div>
       </div>
       <div class="travellers__card" onclick="redirect('nha-trang.html')">
-        <img src="assets/traveller-2.jpg" alt="traveller" />
+        <img src="./assets/images/index/traveller-2.jpg" alt="traveller" />
         <div class="travellers__card__content">
-          <!-- <img src="assets/client-2.jpg" alt="client" /> -->
           <h4>Nha Trang</h4>
           <p>Vietnam</p>
         </div>
       </div>
       <div class="travellers__card" onclick="redirect('phu-quoc.html')">
-        <img src="assets/traveller-3.jpg" alt="traveller" />
+        <img src="./assets/images/index/traveller-3.jpg" alt="traveller" />
         <div class="travellers__card__content">
-          <!-- <img src="assets/client-3.jpg" alt="client" /> -->
           <h4>Phu Quoc</h4>
           <p>Vietnam</p>
         </div>

@@ -363,3 +363,17 @@ a,li{
     border-radius: 5px;
     border: 1px solid rgb(11, 116, 229);
 }
+.alert {
+    width: 80vw;
+    height: 3.5rem;
+    font-size: 20px;
+    font-weight: 500;
+    color: #eee;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    display: none;
+    bottom: 20px;
+    left: 10px;
+}

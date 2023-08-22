@@ -8,105 +8,7 @@ html{
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-.container {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20rem;
-    height: 200px;
-    background-color: #000;
-    border-radius: 50%;
-    filter: blur(7px) contrast(20);
-}
-.circle {
-    position: absolute;
-    width: 22%;
-    height: 41%;
-    border-radius: 50%;
-    filter: blur(10px) contrast(20);
-
-    /* animation: changeWidth 5s infinite alternate; */
-}
-
-.circle-1 {
-    animation: moveCircle-1 5s infinite alternate;
-    background-color: yellow;
-
-}
-
-.circle-2 {
-    animation: moveCircle-2 5s infinite alternate;
-    background-color: red;
-    
-}
 /* All keyfames */
-
-@keyframes moveCircle-1 {
-    0% {
-        left: 0;
-    }
-    100% {
-        left: 99%;
-    }
-    0% {
-        width: 25%
-    }
-    50% {
-        width: 10%;
-    }
-    100% {
-        width: 2%;
-    }
-}
-@keyframes changeWidth {
-    
-}
-@keyframes moveCircle-2 {
-    0% {
-        right: 0;
-    }
-    100% {
-        right: 99%;
-    }
-    0% {
-        width: 20%
-    }
-    50% {
-        width: 10%;
-    }
-    100% {
-        width: 2%;
-    }
-}
-@keyframes changecolor {
-    0% {
-        color: #fbcf61
-    }
-    20% {
-        color: #6bd57e
-    }
-    40% {
-        color: #ff6f6f
-    }
-    60% {
-        color: #18c9ff
-    }
-    80% {
-        color: #09bd99
-    }
-    100% {
-        color: #fbcf61
-    }
-  }
-@keyframes scaleAnimation {
-    0% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(1.25);
-    }
-}
 @keyframes shake {
     0% { 
         transform: translateX(0); 
@@ -127,6 +29,22 @@ html{
         transform: translateX(0); 
     }
 }
+@keyframes typing {
+    from { 
+        width: 0; 
+    }
+    to { 
+        width: 100%; 
+    }
+}
+@keyframes blink-caret {
+    from, to { 
+        border-color: transparent; 
+    }
+    50% { 
+        border-color: orange; 
+    }
+}
 /* Đặt class */
 .default{
     background-color: white;
@@ -142,13 +60,24 @@ a,li{
 }
 /* Heading-title */
 .title-text > h1 {
-    color: #eee;
-    font-size: 4rem;
-    display: inline-block;
-    position: absolute;
-    z-index: 999;
-    animation: changecolor 5s infinite, scaleAnimation 5s ease-in-out infinite alternate;
-    /* animation: changecolor 5s infinite; */
+    color: #ffc700;
+    text-shadow: 8px 5px #400505;
+    font-size: 6rem;
+    font-weight: 700;    display: inline-block;
+    overflow: hidden; /* Tạo dòng chữ bị cắt */
+    border-right: .15em solid orange; /* Hiệu ứng con trỏ */
+    white-space: nowrap; /* Ngăn chữ xuống dòng */
+    margin: 0 auto; /* Căn giữa */
+    letter-spacing: .1em; /* Khoảng cách chữ cái */
+    animation:
+      typing 3.5s steps(30, end) infinite,
+      blink-caret 0.75s step-end infinite;
+}
+@media (width < 600px)
+{
+    .title-text > h1 {
+        font-size: 16vw;
+    }
 }
 .title-text {
     display: flex;
@@ -190,7 +119,9 @@ a,li{
 /* Bảng thông tin điểm đến */
 .info-place{
     width: 300px;
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: #51af43;
     text-align: justify;
     border: 1px #51af43 solid;

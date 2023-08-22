@@ -111,3 +111,14 @@ window.addEventListener("online", function(){
         document.getElementById("succesInternet").style.display = "none";
     }, 5000);
 });
+var text = "Xin chào, đây là hiệu ứng gõ chữ.";
+var index = 0;
+
+function type() {
+  var typingText = document.getElementById("typing-text");
+  if (index < text.length) {
+    typingText.innerHTML += text.charAt(index);
+    index++;
+    setTimeout(type, 100); // Thời gian chờ giữa các ký tự, có thể điều chỉnh
+  }
+}

@@ -110,6 +110,7 @@ window.addEventListener("online", function(){
     document.getElementById("lostInternet").style.display = "none";
     // Sau 5 giây kết nối lại internet thông báo sẽ tự mất
     setTimeout(function(){
+        document.getElementById("succesInternet").style.display = "none";
     }, 5000);
 });
 window.addEventListener("scroll", function () {
@@ -121,4 +122,18 @@ window.addEventListener("scroll", function () {
     else{
         scrollToTop.style.display = "none";
     }
+});
+// Ẩn hiện menu
+$(document).ready(()=>{
+    var check_click = 0;
+    $(".mobile__nav__links").hide();
+    $(".menu-toggle").click(function(){
+        check_click++;
+        if(check_click % 2 == 0){
+            $(".mobile__nav__links").hide();
+        }
+        else {
+            $(".mobile__nav__links").show();
+        } 
+    });
 });

@@ -45,6 +45,16 @@ html{
         border-color: orange; 
     }
 }
+@keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
 /* Đặt class */
 .default{
     background-color: white;
@@ -57,6 +67,34 @@ html{
 a,li{
     list-style-type: none;
     text-decoration: none;
+}
+/* Go to top */
+.to-top {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #333;
+    cursor: pointer;
+    animation: fade-in 1s ease-in-out forwards;
+    opacity: 0;
+    
+}
+.to-top a{
+    color: #eee;
+    font-size: 24px;
+    line-height: 40px;
+    padding: 10px;
+}
+.to-top:hover {
+    background-color: #555;
+}
+.nav__logo a {
+    color: #334c99;
+    padding: 1rem 0;
 }
 /* Heading-title */
 .title-text > h1 {
@@ -504,6 +542,5 @@ a,li{
 }
 #lostInternet {
     background-color: #ff0000;
-    /* position: absolute; */
     animation: shake 0.5s infinite;
 }

@@ -66,6 +66,7 @@ $(document).ready(() => {
         $(this).css("border-color", "transparent");
         $(this).append("(1)");
     });
+    // $(".to-top").css("display", "none");
 });
 function ShowTimeNow(){
     const curDate = new Date(); //Ngày hiện tại
@@ -94,7 +95,8 @@ elements.forEach(function(element) {
   //Gọi hàm khi tải xong trang web
 window.onload = function(){
    ShowTimeNow();
-}
+//    document.getElementsById("to-top").style.display = "none";
+};
 setInterval(ShowTimeNow, 1000);    //Gọi lại hàm sau mỗi giây
 
 window.addEventListener("offline", function(){
@@ -108,17 +110,15 @@ window.addEventListener("online", function(){
     document.getElementById("lostInternet").style.display = "none";
     // Sau 5 giây kết nối lại internet thông báo sẽ tự mất
     setTimeout(function(){
-        document.getElementById("succesInternet").style.display = "none";
     }, 5000);
 });
-var text = "Xin chào, đây là hiệu ứng gõ chữ.";
-var index = 0;
-
-function type() {
-  var typingText = document.getElementById("typing-text");
-  if (index < text.length) {
-    typingText.innerHTML += text.charAt(index);
-    index++;
-    setTimeout(type, 100); // Thời gian chờ giữa các ký tự, có thể điều chỉnh
-  }
-}
+window.addEventListener("scroll", function () {
+    let scrollToTop = document.querySelector(".to-top");
+    if (window.scrollY > 100) {
+        // Hiển thị nút khi lăn chuột xuống dưới
+        scrollToTop.style.display = "block";
+    }
+    else{
+        scrollToTop.style.display = "none";
+    }
+});

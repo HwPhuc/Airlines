@@ -108,7 +108,7 @@ a,li{
 }
 .nav-menu {
     position: fixed;
-    width: 99vw;
+    width: 100vw;
     z-index: 999;
 }
 .nav__logo a {

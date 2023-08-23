@@ -337,6 +337,9 @@ nav.sticky {
         background-color: var(--primary-color-dark);
         margin-bottom: 3px;
     }
+    .rating-filter {
+        margin-top: 5px !important;
+    }
 }
 
 @media (width <= 700px) {
@@ -711,7 +714,7 @@ nav.sticky {
     border-radius: 10px;
     position: fixed;
     display: none;
-    bottom: 20px;
+    bottom: 50px;
     left: 10px;
 }
 #succesInternet {

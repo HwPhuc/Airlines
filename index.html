@@ -14,7 +14,7 @@
 
 <body id="header__container">
   <nav>
-    <div class="nav__logo">OPEN AIRLINES</div>
+    <div class="nav__logo"><a href="index.html">OPEN AIRLINES</a></div>
 
     <div class="menu-toggle">
       <div class="toggle-bar"></div>
@@ -58,7 +58,10 @@
         <span><i class="ri-map-pin-line"></i></span>
         <div class="input__content">
           <div class="input__group">
-            <input type="search" id="destination-input" name="booking-input" />
+            <input type="search" id="place1" onkeyup="showSuggestions(this.value, 'suggest1')">
+            <div class="suggest-container">
+              <ul id="suggest1"></ul>
+            </div>
           </div>
           <p>Bạn muốn đến đâu?</p>
         </div>
@@ -245,8 +248,8 @@
     <div class="section__container subscribe__container">
       <h2 class="section__header">Theo dõi & nhận tin tức mới nhất</h2>
       <form class="subscribe__form">
-        <input type="text" placeholder="Nhập địa chỉ email của bạn" />
-        <button class="btn">Đăng ký</button>
+        <input type="text" id="email" placeholder="Nhập địa chỉ email của bạn" />
+        <button class="btn" id="btn-sub">Đăng ký</button>
       </form>
     </div>
   </section>

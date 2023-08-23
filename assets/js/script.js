@@ -1,3 +1,4 @@
+// Trượt đến vị trí của nội dung nav ul li
 document.addEventListener("DOMContentLoaded", function () {
     var links = document.querySelectorAll('a[href^="#"]');
     links.forEach(function (link) {
@@ -14,6 +15,54 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+//Auto Complete
+$(document).ready(function () {
+    function showSuggestions(inputId, suggestId, suggestList) {
+        $(inputId).on("keyup", function () {
+            let keyword = $(this).val();
+            let suggestions = [];
+
+            for (let c of suggestList) {
+                if (c.indexOf(keyword) >= 0) {
+                    suggestions.push(c);
+                }
+            }
+
+            let suggestElement = $(suggestId);
+            suggestElement.empty();
+
+            if (suggestions.length > 0) {
+                for (let i = 0; i < suggestions.length; i++) {
+                    let suggestion = suggestions[i];
+                    let li = $("<li>").text(suggestion);
+                    li.on("click", function () {
+                        $(inputId).val(suggestion);
+                        suggestElement.empty();
+                    });
+                    suggestElement.append(li);
+                }
+                suggestElement.show();
+            } else {
+                suggestElement.hide();
+            }
+        });
+    }
+
+    // Load JSON data
+    $.getJSON("assets/js/countries.json", function (data) {
+        showSuggestions("#place1", "#suggest1", data);
+    });
+
+    $("html").on("click", function () {
+        $(".suggest-container ul").hide();
+    });
+
+    $(window).on("scroll", function () {
+        $(".suggest-container ul").hide();
+    });
+});
+
+// Nút go to top
 document.addEventListener("DOMContentLoaded", function () {
     var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
@@ -37,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Hiệu ứng xuất hiện khi kéo qua thanh nav
 var nav = document.querySelector("nav");
 var navHeight = nav.offsetHeight;
 var navOffset = nav.offsetTop;
@@ -67,6 +117,7 @@ function redirect(page) {
     window.location.href = page;
 }
 
+// Nhấy nháy nếu input rỗng
 function checkForm(event) {
     event.preventDefault(); // Ngăn chặn hành vi mặc định của nút submit
 
@@ -90,23 +141,54 @@ function checkForm(event) {
     }
 }
 
-function hideSuggestions() {
-    var suggestionList = document.getElementById("suggestion-list");
-    suggestionList.style.display = "none";
-}
+// Ẩn hiện nav ul khi click vào icon 3 dấu gạch ngang
+// Cách 1
+// const menuToggle = document.querySelector(".menu-toggle");
+// const navLinks = document.querySelector(".nav__links");
+// const mobileNavLinks = document.querySelector(".mobile__nav__links");
+// const mobileNavLinksItems = mobileNavLinks.querySelectorAll("li");
 
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav__links");
-const mobileNavLinks = document.querySelector(".mobile__nav__links");
-const mobileNavLinksItems = mobileNavLinks.querySelectorAll("li");
+// menuToggle.addEventListener("click", function () {
+//     navLinks.classList.toggle("active");
+//     mobileNavLinks.classList.toggle("active");
+// });
 
-menuToggle.addEventListener("click", function () {
-    navLinks.classList.toggle("active");
-    mobileNavLinks.classList.toggle("active");
+// mobileNavLinksItems.forEach(function (item) {
+//     item.addEventListener("click", function () {
+//         mobileNavLinks.classList.toggle("active");
+//     });
+// });
+
+// Cách 2
+$(document).ready(() => {
+    var check_click = 0;
+    $(".mobile__nav__links").hide();
+    $(".menu-toggle").click(function () {
+        check_click++;
+        if (check_click % 2 == 0) {
+            $(".mobile__nav__links").hide();
+        } else {
+            $(".mobile__nav__links").show();
+        }
+    });
 });
 
-mobileNavLinksItems.forEach(function (item) {
-    item.addEventListener("click", function () {
-        mobileNavLinks.classList.toggle("active");
+document.addEventListener("DOMContentLoaded", function () {
+    var button = document.getElementById("btn-sub");
+    button.addEventListener("click", function (event) {
+        event.preventDefault(); // Ngăn chặn hành vi gửi form mặc định
+
+        var emailInput = document.getElementById("email");
+        var email = emailInput.value.trim();
+        if (isGmailAddress(email)) {
+            alert("Chúng tôi sẽ gửi thông báo mới nhất cho bạn");
+        } else {
+            alert("Vui lòng nhập một địa chỉ email Gmail hợp lệ");
+        }
     });
+
+    function isGmailAddress(email) {
+        var re = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+        return re.test(email);
+    }
 });

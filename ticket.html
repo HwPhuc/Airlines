@@ -5,17 +5,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
-    Đặt vé
+    Open Airlines | Đặt vé
   </title>
+  <link rel="shortcut icon" href="./assets/images/index/favicon.svg" type="image/svg+xml">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/ticket.css">
 </head>
 
 <body>
-  <a href="index.html" class="back-to-home">
-    <i class="fas fa-home"></i>
-  </a>
+  <nav>
+    <div class="nav__logo"><a href="index.html">OPEN AIRLINES</a></div>
+
+    <div class="menu-toggle">
+      <div class="toggle-bar"></div>
+      <div class="toggle-bar"></div>
+      <div class="toggle-bar"></div>
+    </div>
+
+    <ul class="nav__links">
+      <li class="link"><a href="index.html#header__container">Trang chủ</a></li>
+      <li class="link"><a href="index.html#plan__container">Giới thiệu</a></li>
+      <li class="link"><a href="index.html#memories__container">Ưu đãi</a></li>
+      <li class="link"><a href="index.html#lounge__container">Ghế ngồi</a></li>
+      <li class="link"><a href="index.html#travellers-grid">Điểm đến</a></li>
+    </ul>
+
+    <ul class="mobile__nav__links">
+      <li class="link"><a href="index.html#header__container">Trang chủ</a></li>
+      <li class="link"><a href="index.html#plan__container">Giới thiệu</a></li>
+      <li class="link"><a href="index.html#memories__container">Ưu đãi</a></li>
+      <li class="link"><a href="index.html#lounge__container">Ghế ngồi</a></li>
+      <li class="link"><a href="index.html#travellers-grid">Điểm đến</a></li>
+    </ul>
+
+    <button class="btn">
+      <a href="index.html#contact">Liên hệ</a>
+    </button>
+  </nav>
+
   <div class="container">
     <h1>Danh sách vé máy bay</h1>
     <ul class="flight-list">
@@ -36,6 +64,50 @@
       </li>
     </ul>
   </div>
+
+  <footer class="footer" id="contact">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <h3>Open Airlines</h3>
+        <p>
+          Open Airlines - Nơi xuất phát cho sự xuất sắc. Chúng tôi cam kết tạo
+          sự hài lòng cho khách hàng và đam mê du lịch hàng không, đồng thời
+          mang đến dịch vụ đặc biệt và các chuyến bay liền mạch.
+        </p>
+        <p>
+          Với nụ cười thân thiện và máy bay hiện đại, chúng tôi kết nối thế giới và
+          mang đến trải nghiệm an toàn, thoải mái và khó quên.
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>THÔNG TIN</h4>
+        <p>
+          <a href="index.html#header__container">Trang chủ</a>
+        </p>
+        <p>
+          <a href="index.html#plan__container">Giới thiệu</a>
+        </p>
+        <p>
+          <a href="index.html#memories__container">Ưu đãi</a>
+        </p>
+        <p>
+          <a href="index.html#lounge__container">Ghế ngồi</a>
+        </p>
+        <p>
+          <a href="index.html#travellers-grid">Điểm đến</a>
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>LIÊN HỆ</h4>
+        <p>Ủng hộ</p>
+        <p>Truyền thông</p>
+        <p>Mạng xã hội</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollToTopBtn" title="Trượt lên đầu trang">&#8593;</button>
+
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="./assets/js/ticket.js"></script>
 </body>

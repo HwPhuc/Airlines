@@ -54,7 +54,8 @@
 
 .btn a,
 .view__all a {
-    color: var(--primary-color-dark);
+    /* color: var(--primary-color-dark); */
+    color: var(--text-dark);
 }
 
 .btn:hover,
@@ -81,7 +82,6 @@ body {
 }
 
 nav {
-    /* max-width: var(--max-width); */
     margin: auto;
     padding: 1rem;
     display: flex;
@@ -105,6 +105,9 @@ nav.sticky {
 .nav__logo {
     font-size: 1.5rem;
     font-weight: 800;
+}
+
+.nav__logo a {
     color: var(--primary-color-dark);
 }
 
@@ -117,7 +120,7 @@ nav.sticky {
 
 .link a {
     font-weight: 500;
-    color: var(--text-light);
+    color: var(--primary-color-dark);
     transition: 0.3s;
 }
 
@@ -519,7 +522,7 @@ nav.sticky {
 }
 
 .subscribe__form .btn {
-    color: var(--primary-color-dark);
+    color: var(--text-dark);
 }
 
 .subscribe__form .btn:hover {
@@ -653,14 +656,15 @@ nav.sticky {
         top: 64px;
         left: 0;
         width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
+        height: 50%;
+        background-color: rgb(180, 180, 180, 0.9);
         z-index: 9999;
 
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         flex-direction: column;
+        padding: 15px 0;
     }
 
     .mobile__nav__links.active {
@@ -719,4 +723,29 @@ nav.sticky {
         flex-direction: column;
         text-align: center;
     }
+}
+
+.suggest-container {
+    position: relative;
+}
+
+.suggest-container ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.suggest-container ul li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.suggest-container ul li:hover {
+    background-color: #f2f2f2;
 }

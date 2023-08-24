@@ -99,6 +99,7 @@ window.addEventListener("scroll", function () {
     }
 });
 
+// Chọn loại vé
 function changeBackground(selectedOption) {
     const bookingOptions = document.querySelectorAll(".booking__option");
 
